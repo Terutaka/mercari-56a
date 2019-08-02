@@ -20,8 +20,10 @@
 /node_modules
 /yarn-error.log
 
-/public/assets
+/public/asse]ts
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+.vscode/
+.idea/

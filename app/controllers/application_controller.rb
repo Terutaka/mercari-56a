@@ -10,7 +10,6 @@ class ApplicationController < ActionController::Base
   # end
 
   def basic_auth
-    # http_basic_authenticate_with :username => ENV['BASIC_AUTH_USERNAME'], :password => ENV['BASIC_AUTH_PASSWORD']
 
     authenticate_or_request_with_http_basic do |username, password|
     # http_basic_authenticate_with do |username, password|

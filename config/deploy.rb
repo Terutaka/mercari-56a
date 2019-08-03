@@ -24,5 +24,5 @@ set :default_env, {
 }
 set :linked_files, fetch(:linked_files, []).push("config/master.key")
 
-set :rails_env, "production"
-set :unicorn_rack_env, "production"
+# set :rails_env, "production"
+# set :unicorn_rack_env, "production"

@@ -1,0 +1,121 @@
+
+body{
+	font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
+}
+
+*{
+  list-style: none;
+}
+
+ .header {
+  height: 100px;
+  padding: 0 100px;
+  &_box{
+  	width: 1020px;
+  	margin: 0 auto;
+  	position: relative;
+		&__logo-and-input{
+			color: rgb(51, 51, 51);
+			width: 100%;
+			display: inline-flex;
+			&__logo{
+				height: 50px;
+				width: 144px;
+        margin-right:50px;
+        margin-left:20px;
+			}
+			&__form{
+				margin-top: 8px;
+				width: 100%;
+				position: relative;
+				&__input{
+					background: #fafafa;
+					width: 100%;
+					height: 36px;
+					border: 1px solid #ccc;
+					border-radius: 4px;
+					line-height: 1.5;
+					font-size: 16px;
+					margin-right: 40px;
+					&:focus{
+						border: 1px solid #0099e8;
+						outline-style: none;
+					}
+					&__search{
+						position: absolute;
+						top: 9px;
+						right: 10px;
+						display: none;
+						&_btn{
+						position: absolute;
+						top: 9px;
+						right: 10px;
+						color: #333;
+						}
+					}
+				}
+			}
+		}
+
+ 		&__how-to__look-for {
+			display: inline-block;
+			position: absolute;
+			left: 5px;
+			top: 50px;
+			color: #333;
+		  &_list{
+		  	display: flex;
+        padding-left:20px;
+			  &_btn{
+			  	height: 38px;
+			  	line-height: 32px;
+			  	padding: 10px;
+			  	font-size: 14px;
+			  	&:hover{
+						cursor: pointer;
+					}
+			  }
+			}
+		}
+
+ 		&__userbox{
+			display: inline-block;
+			position: absolute;
+			right: 0px;
+			top: 40px;
+			line-height: 32px;
+			&_user{
+				display: flex;
+				&_login{
+					height: 32px;
+					font-size: 13px;
+					display: inline-block;
+					color: #fff;
+					border: 1px solid #ea352d;
+					background-color: #ea352d;
+					padding: 0 10px;
+					border-radius: 4px;
+					&:hover{
+						cursor: pointer;
+					}
+				}
+				&_signup{
+					height: 32px;
+					font-size: 13px;
+					display: inline-block;
+					color: #0099e8;
+					border: 1px solid #0099e8;
+					padding: 0 10px;
+					border-radius: 4px;
+          margin-right: 10px;
+					&:hover{
+						color: #fff;
+						border: 1px solid #0099e8;
+						background-color: #0099e8;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}

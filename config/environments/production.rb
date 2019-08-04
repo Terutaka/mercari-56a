@@ -23,7 +23,8 @@ Rails.application.configure do
   end
 
   config.active_record.dump_schema_after_migration = false
+
   # ========== 各種画像形式をAssets ==========
-  # config.assets.precompile += %w(*.eot *.woff *.woff2 *.ttf *.svg *.otf *.png *.jpg *.gif )
-  # config.assets.css_compressor = :sass
+  config.assets.precompile += %w(*.eot *.woff *.woff2 *.ttf *.svg *.otf *.png *.jpg *.gif )
+  config.assets.css_compressor = :sass
 end

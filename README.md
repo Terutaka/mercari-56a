@@ -17,8 +17,7 @@
 | price | integer | null false | 商品価格 |
 | seller_id |integer | foreign_key: true, null false | 出品者テーブルID |
 | buyer_id |integer | foreign_key: true | 購入者テーブルID |
-| like | integer || いいね数 |
-| comment_id | text || コメントID |
+| likes-count | integer || いいね数 |
 
 ### Association
 
@@ -32,12 +31,11 @@
 
 ---
 
-## Photos テーブル
+## Ietm-images テーブル
 
 | Column | Type | Options | Desc |
 | :-- | :-- | :-- | :-- |
 | img-list | string | null false | 画像 |
-| item_id | integer | foreign_key: true, null false | itemsテーブルID |
 
 ### Association
 
@@ -49,7 +47,7 @@
 
 | Column | Type | Options | Desc |
 | :-- | :-- | :-- | :-- |
-| genre-list | string | null false | カテゴリー名前 |
+| name | string | null false | カテゴリー名前 |
 | ancestry | string |  | 子孫関係 |
 
 ### Association
@@ -62,7 +60,7 @@
 
 | Column | Type | Options | Desc |
 | :-- | :-- | :-- | :-- |
-| bland-list | string | null false, index | ブランド名 |
+| name | string | null false, index | ブランド名 |
 
 ### Association
 
@@ -74,7 +72,7 @@
 
 | Column | Type | Options | Desc |
 | :-- | :-- | :-- | :-- |
-| Prefecture-list | string | null false | 商品の都道府県 |
+| name | string | null false | 商品の都道府県 |
 
 ### Association
 

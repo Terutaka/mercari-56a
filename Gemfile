@@ -52,3 +52,7 @@ gem 'jquery-rails'
 gem "carrierwave"
 gem "mini_magick"
 gem 'fog-aws'
+
+# ==================== Add gem lists2 ====================
+
+gem 'active_hash'

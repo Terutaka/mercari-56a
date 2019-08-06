@@ -23,7 +23,7 @@
     .tbf-field__texts{
       height: 391px;
       width: 100%;
-      background-color: black;
+      background-color: #212121;
       bottom: 0px;
       .tbf-top__group{
         height: 298px;
@@ -47,7 +47,10 @@
           }
           .__tbf-one-link-option{
           font-size: 26px;
-          padding-top: 14px;
+          .icon{
+            float:left;
+            padding: 14px 10px 0 0;
+          }
           }
         }
         .__tbf-two-box{
@@ -137,8 +140,8 @@
       color: #fff;
       text-align: center;
       &:hover{
-        cursor: pointer;
-      }
+          cursor: pointer;
+        }
       .tbf-btn__title{
         margin: 32px 0 0;
       }

@@ -1,0 +1,129 @@
+.t-box_mains{
+  width: 100%;
+  .tbm-all__group{
+    width: 100%;
+    .tbm-filed__image{
+      height: 390px;
+      background-position: center center;
+      background-color: rgb(231, 230, 230);
+      text-align: center;
+    }
+    .tbm-filed__topic{
+      padding: 40px;
+      text-align: center;
+      .tbm-topic__title{
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 1.4;
+        text-align: center;
+      }
+    }
+    .tbm-filed__content{
+      width: 940px;
+      margin: 0 auto;
+      text-align: right;
+      .tbm-group__title{
+        margin: 26px 0;
+				font-size: 22px;
+				display: block;
+				color: #0099e8;
+				font-weight: bold;
+        text-align: center;
+      }
+      .tbm-group__containers{
+        display: flex;
+        width:500px;
+        .tbm-c__item{
+          margin-left: 20px;
+					width: 200px;
+          margin-right:25px;
+          display: inline-block;
+          .tbm-c__link{
+            .tbm-c__link_figure{
+              overflow: hidden;
+							position: relative;
+							width: 235px;
+							height: 220px;
+							margin: 0px;
+							margin-right: 0px;
+              .tbm-c-image{
+                width: 100%;
+								position: absolute;
+								left: 0;
+								top: 0;
+								bottom: 0;
+								right: 0;
+              }
+            }
+          }
+          .tbm-c__text{
+            width: 200px;
+						height: 110px;
+						padding: 16px;
+						background-color: white;
+						text-align: left;
+						position: relative;
+            .tbm-c__name{
+              position: relative;
+							white-space: pre-line;
+							overflow: hidden;
+              height: 48px;
+              & h3{
+								word-break: break-word;
+								vertical-align: text-top;
+								font-size: 16px;
+								line-height: 1.5;
+								font-weight: 400;
+								position: absolute;
+								top: 0;
+							}
+            }
+            .tbm-c__box{
+              position: absolute;
+							width: 181px;
+							top: 70px;
+							display: flex;
+							justify-content: space-between;
+              .tbm-c__price{
+                font-size: 20px;
+								color: #333;
+								font-weight: 600;
+								left: 0;
+								bottom: 0;
+              }
+              .tbm-c__good{
+                color: #333;
+                font-weight: 400;
+                .tbm-c__good_count{
+                  font-weight: 400;
+									color: #333;
+                }
+              }
+              .tbm-c__text_tax{
+                font-size: 10px;
+							color: #333;
+							position: absolute;
+							bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+      .tbm-group__more{
+        display: block;
+				padding: 20px 0 20px;
+				text-align: right;
+        color: #0099e8;
+        width:100%;
+        .tbm-more__link{
+          text-decoration: none;
+					color: #0099e8;
+          &:hover{
+            opacity: 0.7;
+            cursor: pointer;
+					}
+        }
+      }
+    }
+  }
+}

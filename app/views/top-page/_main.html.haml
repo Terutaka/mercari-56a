@@ -1,132 +1,140 @@
-.contents
-  .contents__top__image-box
+.tbm-all__group
+  .tbm-filed__image
     %ul.slides
       %li
-        = image_tag 'image01.jpg', size: '800x400'
-      -# %li
-      -#   = image_tag 'image02.jpg', size: '1300x400'
-  .contents__container
-    %h2.contents__container_title ピックアップカテゴリー
-    .contents__container__item__box
-      %h3.contents__container__item__box_title レディース新着アイテム
-      .contents__container__item__box__items
-    %section.contents__container__item__box__items__item
-      %a.contents__container__item__box__items__item__link
-        %figure.contents__container__item__box__items__item__link_figure
-          = image_tag 'mercari.jpg', size: '230x255'
-      .contents__container__item__box__items__item_text
-        .contents__container__item__box__items__item_text_item-name
-          %h3 メルカリ商品
-        .contents__container__item__box__items__item_text_item-box
-          .contents__container__item__box__items__item_text_item-box_price ¥800
-          .contents__container__item__box__items__item_text_item-box_good
-            = fa_icon "heart-o", class: "contents__container__item__box__items__item_text_item-box_good_btn"
-            %span.contents__container__item__box__items__item_text_item-box_good_count 3
-        %p.contents__container__item__box__items__item_text_tax 
+        = image_tag "image01.jpg", size: "800x400"
 
-    %section.contents__container__item__box__items__item
-      %a.contents__container__item__box__items__item__link
-        %figure.contents__container__item__box__items__item__link_figure
-          = image_tag 'mercari.jpg', size: '230x255'
-      .contents__container__item__box__items__item_text
-        .contents__container__item__box__items__item_text_item-name
-          %h3.contents__container__item__box__items__item_text_item-name メルカリ
-        .contents__container__item__box__items__item_text_item-box
-          .contents__container__item__box__items__item_text_item-box_price ¥800
-          .contents__container__item__box__items__item_text_item-box_good
-            = fa_icon "heart-o", class:"contents__container__item__box__items__item_text_item-box_good_btn"
-            %span.contents__container__item__box__items__item_text_item-box_good_count 3
-        %p.contents__container__item__box__items__item_text_tax 
+  .tbm-filed__topic
+    .tbm-topic__title
+      ピックアップカテゴリー
 
-    %section.contents__container__item__box__items__item
-      %a.contents__container__item__box__items__item__link
-        %figure.contents__container__item__box__items__item__link_figure
-          = image_tag 'mercari.jpg', size: '230x255'
-      .contents__container__item__box__items__item_text
-        .contents__container__item__box__items__item_text_item-name
-          %h3 メルカリ
-        .contents__container__item__box__items__item_text_item-box
-          .contents__container__item__box__items__item_text_item-box_price ¥800
-          .contents__container__item__box__items__item_text_item-box_good
-            = fa_icon "heart-o", class:"contents__container__item__box__items__item_text_item-box_good_btn"
-            %span.contents__container__item__box__items__item_text_item-box_good_count 3
-        %p.contents__container__item__box__items__item_text_tax 
+  .tbm-filed__content
+    .tbm-group__title
+      レディース新着アイテム
 
-    %section.contents__container__item__box__items__item
-      %a.contents__container__item__box__items__item__link
-        %figure.contents__container__item__box__items__item__link_figure
-          = image_tag 'mercari.jpg', size: '230x255'
-      .contents__container__item__box__items__item_text
-        .contents__container__item__box__items__item_text_item-name
-          %h3 メルカリ
-        .contents__container__item__box__items__item_text_item-box
-          .contents__container__item__box__items__item_text_item-box_price ¥800
-          .contents__container__item__box__items__item_text_item-box_good
-            = fa_icon "heart-o", class:"contents__container__item__box__items__item_text_item-box_good_btn"
-            %span.contents__container__item__box__items__item_text_item-box_good_count 3
-        %p.contents__container__item__box__items__item_text_tax 
+    .tbm-group__containers
+      %section.tbm-c__item
+        %a.tbm-c__link
+          %figure.tbm-c__link_figure
+            = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
+        .tbm-c__text
+          .tbm-c__name
+            %h3 メルカリ商品
+          .tbm-c__box
+            .tbm-c__price ¥800
+            .tbm-c__good
+              = fa_icon "heart-o", class: ".tbm-c__good_btn"
+              %span.tbm-c__good_count 3
+          %p.tbm-c__text_tax
 
-    .contents__container__item__box_link
-    %a.contents__container__item__box_link_text すべての商品を見る
-    .contents__container__item__box
-    %h3.contents__container__item__box_title メンズ新着アイテム
-    .contents__container__item__box__items
+      %section.tbm-c__item
+        %a.tbm-c__link
+          %figure.tbm-c__link_figure
+            = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
+        .tbm-c__text
+          .tbm-c__name
+            %h3 メルカリ商品
+          .tbm-c__box
+            .tbm-c__price ¥800
+            .tbm-c__good
+              = fa_icon "heart-o", class: ".tbm-c__good_btn"
+              %span.tbm-c__good_count 3
+          %p.tbm-c__text_tax
 
-    %section.contents__container__item__box__items__item
-      %a.contents__container__item__box__items__item__link
-        %figure.contents__container__item__box__items__item__link_figure
-          = image_tag 'mercari01.jpg', size: '230x255'
-      .contents__container__item__box__items__item_text
-        .contents__container__item__box__items__item_text_item-name
-          %h3 メルカリ
-        .contents__container__item__box__items__item_text_item-box
-          .contents__container__item__box__items__item_text_item-box_price ¥800
-          .contents__container__item__box__items__item_text_item-box_good
-            = fa_icon "heart-o", class:"contents__container__item__box__items__item_text_item-box_good_btn"
-            %span.contents__container__item__box__items__item_text_item-box_good_count 3
-        %p.contents__container__item__box__items__item_text_tax
+      %section.tbm-c__item
+        %a.tbm-c__link
+          %figure.tbm-c__link_figure
+            = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
+        .tbm-c__text
+          .tbm-c__name
+            %h3 メルカリ商品
+          .tbm-c__box
+            .tbm-c__price ¥800
+            .tbm-c__good
+              = fa_icon "heart-o", class: ".tbm-c__good_btn"
+              %span.tbm-c__good_count 3
+          %p.tbm-c__text_tax
 
-    %section.contents__container__item__box__items__item
-      %a.contents__container__item__box__items__item__link
-        %figure.contents__container__item__box__items__item__link_figure
-          = image_tag 'mercari01.jpg', size: '230x255'
-      .contents__container__item__box__items__item_text
-        .contents__container__item__box__items__item_text_item-name
-          %h3 メルカリ
-        .contents__container__item__box__items__item_text_item-box
-          .contents__container__item__box__items__item_text_item-box_price ¥800
-          .contents__container__item__box__items__item_text_item-box_good
-            = fa_icon "heart-o", class:"contents__container__item__box__items__item_text_item-box_good_btn"
-            %span.contents__container__item__box__items__item_text_item-box_good_count 3
-        %p.contents__container__item__box__items__item_text_tax
+      %section.tbm-c__item
+        %a.tbm-c__link
+          %figure.tbm-c__link_figure
+            = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
+        .tbm-c__text
+          .tbm-c__name
+            %h3 メルカリ商品
+          .tbm-c__box
+            .tbm-c__price ¥800
+            .tbm-c__good
+              = fa_icon "heart-o", class: ".tbm-c__good_btn"
+              %span.tbm-c__good_count 3
+          %p.tbm-c__text_tax
 
-    %section.contents__container__item__box__items__item
-      %a.contents__container__item__box__items__item__link
-        %figure.contents__container__item__box__items__item__link_figure
-          = image_tag 'mercari01.jpg', size: '230x255'
-      .contents__container__item__box__items__item_text
-        .contents__container__item__box__items__item_text_item-name
-          %h3 メルカリ
-        .contents__container__item__box__items__item_text_item-box
-          .contents__container__item__box__items__item_text_item-box_price ¥800
-          .contents__container__item__box__items__item_text_item-box_good
-            = fa_icon "heart-o", class:"contents__container__item__box__items__item_text_item-box_good_btn"
-            %span.contents__container__item__box__items__item_text_item-box_good_count 3
-        %p.contents__container__item__box__items__item_text_tax
+    .tbm-group__more
+      %a.tbm-more__link
+        すべての商品を見る
 
-    %section.contents__container__item__box__items__item
-      %a.contents__container__item__box__items__item__link
-        %figure.contents__container__item__box__items__item__link_figure
-          = image_tag 'mercari01.jpg', size: '230x255'
-      .contents__container__item__box__items__item_text
-        .contents__container__item__box__items__item_text_item-name
-          %h3 メルカリ
-        .contents__container__item__box__items__item_text_item-box
-          .contents__container__item__box__items__item_text_item-box_price ¥800
-          .contents__container__item__box__items__item_text_item-box_good
-            = fa_icon "heart-o", class:"contents__container__item__box__items__item_text_item-box_good_btn"
-            %span.contents__container__item__box__items__item_text_item-box_good_count 3
-        %p.contents__container__item__box__items__item_text_tax
 
-    .contents__container__item__box_link
-    %a.contents__container__item__box_link_text すべての商品を見る
+    .tbm-filed__content
+    .tbm-group__title
+      レディース新着アイテム
+
+    .tbm-group__containers
+      %section.tbm-c__item
+        %a.tbm-c__link
+          %figure.tbm-c__link_figure
+            = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
+        .tbm-c__text
+          .tbm-c__name
+            %h3 メルカリ商品
+          .tbm-c__box
+            .tbm-c__price ¥800
+            .tbm-c__good
+              = fa_icon "heart-o", class: ".tbm-c__good_btn"
+              %span.tbm-c__good_count 3
+          %p.tbm-c__text_tax
+
+      %section.tbm-c__item
+        %a.tbm-c__link
+          %figure.tbm-c__link_figure
+            = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
+        .tbm-c__text
+          .tbm-c__name
+            %h3 メルカリ商品
+          .tbm-c__box
+            .tbm-c__price ¥800
+            .tbm-c__good
+              = fa_icon "heart-o", class: ".tbm-c__good_btn"
+              %span.tbm-c__good_count 3
+          %p.tbm-c__text_tax
+
+      %section.tbm-c__item
+        %a.tbm-c__link
+          %figure.tbm-c__link_figure
+            = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
+        .tbm-c__text
+          .tbm-c__name
+            %h3 メルカリ商品
+          .tbm-c__box
+            .tbm-c__price ¥800
+            .tbm-c__good
+              = fa_icon "heart-o", class: ".tbm-c__good_btn"
+              %span.tbm-c__good_count 3
+          %p.tbm-c__text_tax
+
+      %section.tbm-c__item
+        %a.tbm-c__link
+          %figure.tbm-c__link_figure
+            = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
+        .tbm-c__text
+          .tbm-c__name
+            %h3 メルカリ商品
+          .tbm-c__box
+            .tbm-c__price ¥800
+            .tbm-c__good
+              = fa_icon "heart-o", class: ".tbm-c__good_btn"
+              %span.tbm-c__good_count 3
+          %p.tbm-c__text_tax
+
+    .tbm-group__more
+      %a.tbm-more__link
+        すべての商品を見る

@@ -1,65 +1,66 @@
 .box
-  .mypage-box
+  .mypage-content
+    .mypage-box
 
-    .m-box_left
+      .m-box_left
 
-    .m-box_right
-      .mbr-all__gruop
+      .m-box_right
+        .mbr-all__gruop
 
-        .mbr-field__title 本人情報の登録
-        %form.mbr-field__form
+          .mbr-field__title 本人情報の登録
+          %form.mbr-field__form
 
-          .mbr-attention
-            %p.mbr-text
-              お客さまの本人情報をご登録ください。
-              %br
-              登録されたお名前・生年月日を変更する場合、本人確認書類の提出が必要になります。
+            .mbr-attention
+              %p.mbr-text
+                お客さまの本人情報をご登録ください。
+                %br
+                登録されたお名前・生年月日を変更する場合、本人確認書類の提出が必要になります。
+              %a.mbr-link{href: "#"}
+                本人確認書類のアップロードについて
+                = fa_icon 'chevron-right',class: "icon"
+
+            .mbr-info
+              .mbr-title お名前
+              .mbr-my チーム a
+
+            .mbr-info
+              .mbr-title お名前カナ
+              .mbr-my チーム エー
+
+            .mbr-info
+              .mbr-title 生年月日
+              .mbr-my 2019/08/2
+
+            .mbr-f
+              %label.mbr-title 郵便番号
+              %span.mbr-logo 任意
+              %input.mdr-address{placeholder: "例）1234567"}
+
+            .mbr-f
+              %label.mbr-title 都道府県
+              %span.mbr-logo 任意
+              .mdr-address-select
+                %select.mdr-address-select-icon
+                = fa_icon "angle-down"
+
+            .mbr-f
+              %label.mbr-title 市区町村
+              %span.mbr-logo 任意
+              %input.mdr-address{placeholder: "例）横浜市緑区"}
+
+            .mbr-f
+              %label.mbr-title 番地
+              %span.mbr-logo 任意
+              %input.mdr-address{placeholder: "例）青山1-1-1"}
+
+            .mbr-f
+              %label.mbr-title 建物名
+              %span.mbr-logo 任意
+              %input.mdr-address{placeholder: "例）柳ビル103"}
+
+            %button.mbr-button{type: "submit"} 登録する
+
             %a.mbr-link{href: "#"}
-              本人確認書類のアップロードについて
-              = fa_icon 'chevron-right',class: "icon"
-
-          .mbr-info
-            .mbr-title お名前
-            .mbr-my チーム a
-
-          .mbr-info
-            .mbr-title お名前カナ
-            .mbr-my チーム エー
-
-          .mbr-info
-            .mbr-title 生年月日
-            .mbr-my 2019/08/2
-
-          .mbr-f
-            %label.mbr-title 郵便番号
-            %span.mbr-logo 任意
-            %input.mdr-address{placeholder: "例）1234567"}
-
-          .mbr-f
-            %label.mbr-title 都道府県
-            %span.mbr-logo 任意
-            .mdr-address-select
-              %select.mdr-address-select-icon
-              = fa_icon "angle-down"
-
-          .mbr-f
-            %label.mbr-title 市区町村
-            %span.mbr-logo 任意
-            %input.mdr-address{placeholder: "例）横浜市緑区"}
-
-          .mbr-f
-            %label.mbr-title 番地
-            %span.mbr-logo 任意
-            %input.mdr-address{placeholder: "例）青山1-1-1"}
-
-          .mbr-f
-            %label.mbr-title 建物名
-            %span.mbr-logo 任意
-            %input.mdr-address{placeholder: "例）柳ビル103"}
-
-          %button.mbr-button{type: "submit"} 登録する
-
-          %a.mbr-link{href: "#"}
-            本人情報の登録について
-            = fa_icon 'chevron-right'
+              本人情報の登録について
+              = fa_icon 'chevron-right'
 

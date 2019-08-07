@@ -61,3 +61,4 @@ gem 'active_hash'
 
 gem 'ancestry'
 gem 'devise'
+gem 'payjp'

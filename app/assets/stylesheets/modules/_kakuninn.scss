@@ -1,0 +1,143 @@
+*{
+  box-sizing: border-box;
+}
+.box{
+  width:100%;
+  background-color:  #f4f4f4;
+}
+.mypage-box{
+  width: 1020px;
+  height: 1292px;
+  margin: 40px auto;
+  display: flex;
+}
+.m-box_left{
+  width: 280px;
+  height: 1252px;
+  margin-right: 40px;
+}
+
+.m-box_right{
+  background-color: #fff;
+  width: 700px;
+  height: 1208px;
+  .mbr-field__title{
+    height: 50px;
+    padding: 8px 24px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: solid 1px #f5f5f5
+  }
+  .mbr-field__form{
+    height: 1029px;
+    padding: 64px;
+    .mbr-attention{
+      height: 71px;
+      .mbr-text{
+        height: 42px;
+        margin-top: 8px;
+        font-size: 14px;
+      }
+      .mbr-link{
+        height: 21px;
+        width: 100%;
+        margin-top: 8px;
+        display: table;
+        float: right;
+        color: #0099e8;
+        text-decoration: none;
+      }
+    }
+    .mbr-info{
+      height: 43px;
+      margin-top: 40px;
+      .mbr-title{
+        font-weight: 600;
+        font-size: 13px;
+        height: 14px;
+      }
+      .mbr-my{
+        height: 21px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 100;
+      }
+    }
+    .mbr-f{
+      height:  76px;
+      margin-top: 40px;
+      .mbr-title{
+        font-weight: 600;
+        font-size: 13px;
+        height: 14px;
+      }
+      .mbr-logo{
+        background-color: #ccc;
+        margin-left: 8px;
+        color:#fff;
+        border-radius: 2px;
+        font-size: 12px;
+        padding: 2px 4px;
+        vertical-align: top;
+      }
+      .mdr-address{
+        width: 100%;
+        height:48px;
+        margin-top: 8px;
+        padding: 10px 16px 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+      }
+      .mdr-address-select{
+        margin-top: 8px;
+        font-size: 16px;
+        position: relative;
+        .mdr-address-select-icon{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 48px;
+        background: #fff;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        padding: 0 16px;
+        }
+        .fa-angle-down{
+          position: absolute;
+          right: 16px;
+          top: 15px;
+          font-size: 25px;
+          color: #888;
+        }
+      }
+    }
+    .mbr-button{
+      height: 50px;
+      width: 100%;
+      margin-top: 40px;
+      background-color:#ea352d;
+      border:1px solid #ea352d;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      line-height: 48px;
+    }
+    .mbr-link{
+      height: 21px;
+      margin-top: 40px;
+      text-align: right;
+      width: 100%;
+      color: #0099e8;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+    }
+  }
+}
+
+
+

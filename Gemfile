@@ -56,3 +56,8 @@ gem 'fog-aws'
 # ==================== Add gem lists2 ====================
 
 gem 'active_hash'
+
+# ==================== Add gem lists3 ====================
+
+gem 'ancestry'
+gem 'devise'

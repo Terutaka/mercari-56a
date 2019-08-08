@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     collection do
       get "profile"
       get "mypage"
+      get "exhibit"
     end
   end
 

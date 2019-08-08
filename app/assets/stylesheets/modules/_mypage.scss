@@ -1,0 +1,123 @@
+.box{
+  width: 100%;
+  height: 2132px;
+  background-color: blue;
+}
+.head{
+  width: 100%;
+  height: 49px;
+  background-color: red;
+}
+.head2{
+  width: 100%;
+  height: 40px;
+  background-color: green;
+}
+// .main{
+//   width: 100%;
+//   height: 1292px;
+//   background-color: greenyellow;
+// }
+//   .senter-box{
+//     width: 1020px;
+//     height: 1252px;
+//     margin: 0px auto 40px;
+//     // display: flex;
+//     background-color: blueviolet
+//   }
+    .mypage-box{
+      background-color: plum;
+      width: 700px;
+      height: 1200.44px;
+    }
+      .__user{
+        width: 700px;
+        height: 200px;
+        background: url(user-bg.jpg);
+        background-color: deepskyblue;
+      }
+      .__announce{
+        background-color:goldenrod;
+        width: 700px;
+        height: 578.44px;
+        box-sizing: border-box;
+      }
+        .__mp-tabs{
+          height: 74px;
+          background-color: coral;
+          display: flex;
+        }
+          .__notice{
+            width: 350px;
+            height: 74px;
+            background-color: palevioletred;
+          }
+          .__todoing{
+            width: 350px;
+            height: 74px;
+            background-color: dimgray;
+          }
+        .__details{
+          width: 700px;
+          height: 416.44px;
+          background-color: turquoise;
+        }
+        
+          .__multiple{
+            width: 700px;
+            height: 416.44px;
+            background-color: antiquewhite;
+          }
+              .__breakdown{
+                width: 668px;
+                height: 48px;
+                padding: 16px;
+                background-color: darkorange;
+
+              }
+        .__list-btn{
+          width: 700px;
+          height: 88px;
+          background-color: mediumseagreen;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+          .__list-btn-act{
+            width: 668px;
+            height: 56px;
+            background-color: red;
+          }
+      .__local{
+        background-color: darkcyan;
+        width: 700px;
+        height: 382px;
+        margin-top: 40px;
+      }
+        .__purchase{
+          width: 700px;
+          height: 72px;
+          background-color: aqua;
+        }
+        .__transaction{
+          width: 700px;
+          height: 74px;
+          background-color: burlywood;
+          display: flex;
+        }
+          .__t-current{
+            width: 350px;
+            height: 74px;
+            background-color: chocolate;
+          }
+          .__t-past{
+            width: 350px;
+            height: 74px;
+            background-color: cadetblue;
+          }
+        .__trading{
+          width: 700px;
+          height: 236px;
+          background-color: mediumvioletred;
+        }
+  

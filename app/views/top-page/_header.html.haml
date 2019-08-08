@@ -1,23 +1,24 @@
-.header_box
-  .header_box__logo-and-input
-    = image_tag("mercari_logo_horizontal",:class => "header_box__logo-and-input__logo" )
-    %form.header_box__logo-and-input__form
-      %input{class: "header_box__logo-and-input__form__input", placeholder: "何かお探しですか？"}
-      %input{type: "submit", id: "header_box__logo-and-input__form__input", value: "何かお探しですか？", class: "header_box__logo-and-input__form__input__search"}
-      %label{for: "header_box__logo-and-input__form__input"}
-        = fa_icon "search", :class => "header_box__logo-and-input__form__input__search_btn"
-  .header_box__how-to__look-for
-    %ul.header_box__how-to__look-for_list
-      %li
-        %i.fa.fa-list-ul{"aria-hidden" => "true"}
-        %a.header_box__how-to__look-for_list_btn カテゴリーから探す
+.tbh-all__group
+  .tbh-filed__logo
+    = image_tag("mercari_logo_horizontal",class: "tbh-logo")
+    .tbh-filed__form
+      %form.tbh-b__group
+        %input{placeholder: "何かお探しですか？", class: "tbh-form__input"}
+        %label{for: "tbh-form__input"}
+          = fa_icon "search", class: "tbh-form__search__btn"
 
+  .tbh-filed__select
+    %ul.tbh-st__group
       %li
-        %i.fa.fa-tag{"aria-hidden" => "true"}
-        %a.header_box__how-to__look-for_list_btn ブランドから探す
-  .header_box__userbox
-    %ul.header_box__userbox_user
+        %i.fa.fa-list-ul{"aria-hidden" => "true",class: "tbh-icon"}
+        %a.tbh-st-list_btn カテゴリーから探す
       %li
-        %a.header_box__userbox_user_signup ログイン
+        %i.fa.fa-tag{"aria-hidden" => "true",class: "tbh-icon"}
+        %a.tbh-st-list_btn ブランドから探す
+
+  .tbh-filed__userbox
+    %ul.tbh-ub__group
       %li
-        %a.header_box__userbox_user_login 新規会員登録
+        %a.tbh-st-signup 新規会員登録
+      %li
+        %a.tbh-st-login ログイン

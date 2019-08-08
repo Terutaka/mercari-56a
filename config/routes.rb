@@ -4,9 +4,11 @@ Rails.application.routes.draw do
   devise_for :users
   root 'items#index'
 
+  # 今後変更予定
   resources :items do
     collection do
       get "profile"
+      get "mypage"
     end
   end
 

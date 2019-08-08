@@ -20,5 +20,7 @@ module Mercari56a
     config.time_zone = 'Tokyo'
     config.active_record.default_timezone = :local
 
+  # ========== 検証環境の判断 ==========
+    config.rack_dev_mark.enable = !Rails.env.production?
   end
 end

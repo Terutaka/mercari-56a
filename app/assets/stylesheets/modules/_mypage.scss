@@ -1,0 +1,240 @@
+.box{
+  width: 100%;
+  height: 2132px;
+  background-color: #212121;
+}
+  .head{
+    width: 100%;
+    height: 49px;
+  }
+  .head2{
+    width: 100%;
+    height: 40px;
+    background-color: #f4f4f4
+  }
+  .mainoreo{
+    width: 100%;
+    height: 1292px;
+    background-color: #f4f4f4;
+  }
+    .senter-box{
+      width: 1020px;
+      height: 1252px;
+      display: flex;
+      background-color: #f4f4f4;
+    }
+      .mypage-box-oreo{
+        width: 700px;
+        height: 1200.44px;
+      }
+        .__user-picture{
+          width: 700px;
+          height: 200px;
+          background: url(user-bg.jpg);
+          position: relative;
+        }
+          .__inner-box{
+            width: 700px;
+            height: 111px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translate(0, -50%);
+            color: #333;
+          }
+            .__merdoll{
+              overflow: hidden;
+              width: 60px;
+              height: 60px;
+              margin: 0 auto;
+              border-radius: 50%;
+            }
+            .__thin-line{
+              width: 700px;
+              height: 19px;
+              margin: 8px 0px 0px 0px;
+              font-size: 14px;
+              font-weight: 600;
+              text-align: center;
+            }
+            .__evaluation{
+              width: 700px;
+              height: 16px;
+              margin: 8px 0px 0px 0px;
+              text-align: center;
+            }
+              .__e-score{
+                display: inline-block;
+                font-size: 14px;
+              }
+              .__exhibit{
+                margin: 0 0 0 16px;
+                display: inline-block;
+                font-size: 14px;
+              }
+        .__announce{
+          width: 700px;
+          height: 578.44px;
+          box-sizing: border-box;
+        }
+          .__mp-tabs{
+            height: 74px;
+            display: flex;
+            text-align: center;
+          }
+            .__notice{
+              width: 350px;
+              height: 74px;
+              font-size: 22px;
+              background-color: white;
+            }
+              .__inner-tab{
+                position: relative;
+                display: block;
+                color: #333;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 72px;
+              }
+              .harf-line{
+                border-top: 2px solid #ea352d;
+              }
+            .__todoing{
+              width: 350px;
+              height: 74px;
+              font-size: 22px;
+              background-color: #eee;
+            }
+          .__details{
+            width: 700px;
+            height: 416.44px;
+            background-color: #fafafa;
+          }
+            .__multiple{
+              width: 700px;
+              height: 416.44px;
+              background-color: white;
+            }
+              .__breakdown{
+                width: 668px;
+                height: 48px;
+                padding: 16px;
+                position: relative;
+                border-bottom-style: solid;
+                border-color: #f4f4f4;
+              }
+                .__b-mascot{
+                  float: left;
+                  width: 48px;
+                  float: left;
+                }
+                .__text-block{
+                  margin: 0 40px 0 68px;
+                  font-size: 14px;
+                }
+                  .__time-clock{
+                    display: inline-block;
+                    color: #888;
+                    width: 71.77px;
+                    height: 17.44px;
+                    margin-left: 68px;
+                    display: flex;
+                  }
+                    .__clock-icon{
+                      margin: 0 8px 0 0;
+                      display: inline-block;
+                      font-family: 'icon-font';
+                      font-style: normal;
+                      font-weight: 400;
+                      font-variant: normal;
+                      text-transform: none;
+                      line-height: 1;
+                      -webkit-font-smoothing: antialiased;
+                      font-size: 20px;
+                      vertical-align: middle;
+                    }
+                    .__complete-day{
+                      vertical-align: middle;
+                    }
+                .__icon-arrows{
+                  position: absolute;
+                  top: 40%;
+                  right: 16px;
+                }
+          .__list-btn{
+            width: 700px;
+            height: 88px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+            .__list-btn-act{
+              width: 668px;
+              height: 56px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: #eee;
+            }
+              .__inline-text{
+                color: #333;
+              }
+        .__local-small{
+          background-color: white;
+          width: 700px;
+          height: 382px;
+          margin-top: 40px;
+        }
+          .__purchase{
+            width: 700px;
+            height: 72px;
+            font-size: 16px;
+            line-height: 72px;
+            background-color: #fafafa;
+          }
+          .__transaction{
+            width: 700px;
+            height: 74px;
+            display: flex;
+          }
+            .__t-current{
+              width: 350px;
+              height: 74px;
+              text-align:center;
+              background-color: white;
+            }
+            .__inner-text{
+              position: relative;
+              display: block;
+              color: #333;
+              font-size: 16px;
+              font-weight: bold;
+              line-height: 72px;
+            }
+            .__t-past{
+              width: 350px;
+              height: 74px;
+              text-align:center;
+              background-color: #eee;
+            }
+          .__trading-item{
+            width: 700px;
+            height: 236px;
+            background-color: white;
+          }
+            .__merulogo{
+              width: 700px;
+              height: 16px;
+              background: url("logo-gray-icon.svg");
+              padding: 160px 0 60px;
+              background-repeat: no-repeat;
+              background-position: center 40px;
+              background-size: 100px 100px;
+              text-align: center;
+              font-size: 16px;
+              color: #ccc;
+            }
+    

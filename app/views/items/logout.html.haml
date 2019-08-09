@@ -1,0 +1,16 @@
+.box
+  .logout-box
+    .t-box_headers
+      = render 'top-page/header'
+    .p-box_main
+      .head2
+      .main
+        .senter-box
+          = render 'profile-page/left'
+          .__logout-right-content
+            .__p-logout
+              .__logout-submit
+                .__logout-btn
+                  = link_to "ログアウト", root_path,class: "logout_btn-text"
+    .t-box_footers
+      = render 'top-page/footer'

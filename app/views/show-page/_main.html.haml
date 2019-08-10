@@ -1,0 +1,77 @@
+.tbsm-all__group
+  .t-box_headers
+    = render 'top-page/header'
+  .tbsm-item__content
+    .tbsm-filed__header
+      GUCCI　ソーホーハンドバッグ　　ストラップ付き
+    .tbsm-filed__show
+      .tbsm-left-group
+        %section.tbsml-top_image
+          = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
+        %section.tbsml-bottom_image
+          .show-photos_all
+            image
+      .tbsm-right-group
+        .show-item_value
+          %section.tbsm-group_box
+            .tbsmr-item
+              出品者
+            .tbsmr-value
+              出品者名前
+          %section.tbsm-group_box
+            .tbsmr-item
+              カテゴリー
+            .tbsmr-value
+              レディースなど
+          %section.tbsm-group_box
+            .tbsmr-item
+              ブランド
+            .tbsmr-value
+              グッチ
+          %section.tbsm-group_box
+            .tbsmr-item
+              商品の状態
+            .tbsmr-value
+              良い
+          %section.tbsm-group_box
+            .tbsmr-item
+              配送料の負担
+            .tbsmr-value
+              送料込み(出品者負担)
+          %section.tbsm-group_box
+            .tbsmr-item
+              配送の方法
+            .tbsmr-value
+              らくらくメルカリ
+          %section.tbsm-group_box
+            .tbsmr-item
+              配送元地域
+            .tbsmr-value
+              大阪府
+          %section.tbsm-group_box
+            .tbsmr-item
+              発送日の目安
+            .tbsmr-value
+              1~2日で発送
+    .tbsm-filed__money
+      ￥金額
+      (税込み)
+      送料込み
+    .tbsm-filed__btn
+      購入画面に進む
+    .tbsm-filed__desc
+      商品の説明
+    .tbsm-filed__like
+      いいね
+      不適切な商品の報告
+      あんしん･安全への取り組み
+  .tbsm-comment__content
+    .tbsm-filed__note
+      相手のことを考え丁寧なコメントを心がけましょう。不快な言葉遣いなどは利用制限や退会処分となることがあります。
+    .tbsm-filed__text
+      %input{placeholder: "何かお探しですか？", class: "tbh-form__input"}
+    .tbsm-filed__btn
+      コメントする
+  .tbsm-footer__content
+    .t-box_footers
+      = render 'top-page/footer'

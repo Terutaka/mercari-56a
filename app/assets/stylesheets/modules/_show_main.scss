@@ -1,0 +1,82 @@
+.show-box_main{
+  width:100%;
+  height:100%;
+  .tbsm-all__group{
+    text-align: center;
+    .tbsm-item__content{
+      color:black;
+      background-color:white;
+      margin:40px auto 0;
+      width: 50%;
+      padding:24px 40px 40px;
+      .tbsm-filed__header{
+        font-size:24px;
+
+      }
+      .tbsm-filed__show{
+        width:100%;
+        // display:block;
+        .tbsm-left-group{
+          width:50%;
+          float:left;
+          .tbsml-top_image{
+
+          }
+          .tbsml-bottom_image{
+            // clear:right;
+            .show-photos_all{
+
+            }
+          }
+        }
+        .tbsm-right-group{
+          width:50%;
+          float:right;
+          .show-item_value{
+            .tbsm-group_box{
+              .tbsmr-item{
+                background-color:#f5f5f5;
+                float:left;
+              }
+              .tbsmr-value{
+                float:right;
+
+              }
+            }
+          }
+        }
+      }
+      .tbsm-filed__money{
+        // display:block;
+        width:100%;
+
+      }
+      .tbsm-filed__btn{
+
+      }
+      .tbsm-filed__desc{
+
+      }
+      .tbsm-filed__like{
+
+      }
+    }
+    .tbsm-comment__content{
+      // display:block;
+      background-color:white;
+      margin:40px auto 0;
+      width: 50%;
+      padding:24px 40px 40px;
+      .tbsm-filed__note{
+        background:rgb(255, 246, 222);
+
+      }
+      .tbsm-filed__text{
+
+      }
+      .tbsm-filed__btn{
+
+      }
+    }
+  }
+}

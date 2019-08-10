@@ -10,11 +10,8 @@ Rails.application.routes.draw do
       get "profile"
       get "mypage"
       get "exhibit"
-      get "logout"
     end
   end
-
-  resources :users
 
   resources :card, only: [:new, :show] do
     collection do
@@ -23,4 +20,5 @@ Rails.application.routes.draw do
       post 'delete', to: 'card#delete'
     end
   end
+
 end

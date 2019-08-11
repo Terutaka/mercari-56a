@@ -16,17 +16,21 @@
           %section.tbsm-group_box
             .tbsmr-item
               出品者
-            .tbsmr-value
-              出品者名前
+            .tbsmr-value.tbsmr-color
+              情報さとこ
           %section.tbsm-group_box
-            .tbsmr-item
+            .tbsmr-item-large
               カテゴリー
-            .tbsmr-value
+            .tbsmr-value-large.tbsmr-color
               レディースなど
+              %p
+                > パンツ
+              %p
+                > ショートパンツ
           %section.tbsm-group_box
             .tbsmr-item
               ブランド
-            .tbsmr-value
+            .tbsmr-value.tbsmr-color
               グッチ
           %section.tbsm-group_box
             .tbsmr-item
@@ -46,30 +50,58 @@
           %section.tbsm-group_box
             .tbsmr-item
               配送元地域
-            .tbsmr-value
+            .tbsmr-value.tbsmr-color
               大阪府
           %section.tbsm-group_box
             .tbsmr-item
               発送日の目安
             .tbsmr-value
               1~2日で発送
-    .tbsm-filed__money
-      ￥金額
-      (税込み)
-      送料込み
-    .tbsm-filed__btn
-      購入画面に進む
-    .tbsm-filed__desc
-      商品の説明
-    .tbsm-filed__like
-      いいね
-      不適切な商品の報告
-      あんしん･安全への取り組み
+
+    .tbsm-filed__footer
+      .tbsm-filed__money
+        .tbsm-price-box
+          ￥ 500
+        .tbsm-tax-box
+          (税込み) 送料込み
+      .tbsm-filed__btn
+        購入画面に進む
+      .tbsm-filed__desc
+        ご覧いただきありがとうございます。
+        %br
+        こちらはR.NEWBOLDのボーダーTシャツです。
+        %br
+        ◎カテゴリー
+        %br
+        ユーズド ≫即購入OK （オファー受けます）
+        %br
+        ◎商品の特徴
+        %br
+        出品時:2400円（送料込み）
+        %br
+        ※ラストプライス
+        %br
+        夏に着るにはもってこいの淡いピンクの
+        %br
+        ボーダーシャツです (^ ^)
+      .tbsm-filed__like
+        .tbsm-like-left-box
+          .tbsm-like_box
+            .fa.fa-heart{"aria-hidden" => "true",class: "tbh-icon"}
+            いいね
+          .tbsm-not_box
+            .fa.fa-flag{"aria-hidden" => "true",class: "tbh-icon"}
+            不適切な商品の報告
+        .tbsm-like-right-box
+          .tbsm-security_box
+            .fa.fa-unlock-alt{"aria-hidden" => "true",class: "tbh-icon"}
+            あんしん･安全への取り組み
+
   .tbsm-comment__content
     .tbsm-filed__note
       相手のことを考え丁寧なコメントを心がけましょう。不快な言葉遣いなどは利用制限や退会処分となることがあります。
     .tbsm-filed__text
-      %input{placeholder: "何かお探しですか？", class: "tbh-form__input"}
+      %input{class: "tbh-form__input", style: "width:100%; height:100px; box-sizing:border-box"}
     .tbsm-filed__btn
       コメントする
   .tbsm-footer__content

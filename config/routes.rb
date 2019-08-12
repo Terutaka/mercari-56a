@@ -13,6 +13,7 @@ Rails.application.routes.draw do
       get "new_user"
       get "login"
       get "come_user"
+      get "complete"
     end
   end
 

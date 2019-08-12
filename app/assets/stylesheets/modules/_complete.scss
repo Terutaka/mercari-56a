@@ -1,0 +1,36 @@
+.new_user{
+  width:720px;
+  text-align: center;
+  .ch_box{
+    width:100%;
+    margin:30px auto;
+    border-bottom: solid 2px blue;
+    .ch_group{
+      
+      border:line 5px;
+      .ch_title{
+        
+      }
+    }
+  }
+  .cm_box{
+    margin:30px auto;
+    .cm_group{
+      .cm_message{
+
+      }
+    }
+  }
+  .cf_box{
+    width:90%;
+    te
+    // float:center;
+    .cf_group{
+      background-color:red;
+      margin:30px auto;
+      .cf_btn{
+        color:white;
+      }
+    }
+  }
+}

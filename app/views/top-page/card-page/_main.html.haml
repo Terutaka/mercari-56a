@@ -1,0 +1,53 @@
+.main
+  .senter-box
+    .left-content
+
+    .right-content-card
+
+      .s-field__title クレジットカード情報入力
+
+      .s-card-form
+        .scf-senter
+
+          .scf-number
+            %label.scf-title カード番号
+            %span.scf-logo 必須
+            %input.scf-input{placeholder: "半角数字のみ"}
+            %ul.scf-companies
+              %li
+                = image_tag 'visa.svg', size: '49x20'
+              %li
+                = image_tag 'master-card.svg',size: '34x20'
+              %li
+                = image_tag 'saison-card.svg', size: '30x20'
+              %li
+                = image_tag 'jcb.svg', size: '32x20'
+              %li
+                = image_tag 'american_express.svg', size: '21x20'
+              %li
+                = image_tag 'dinersclub.svg', size: '32x20'
+              %li
+                = image_tag 'discover.svg', size:'32x20'
+
+          .scf-expire
+            %label.scf-title 有効期限
+            %span.scf-logo 必須
+            .scf-selects-wrap
+              .scf-select-wrap
+                %select.scf-expire-select
+                = fa_icon "angle-down",class: "scf-icon"
+                %span.scf-sub 月
+              .scf-select-wrap
+                %select.scf-expire-select
+                = fa_icon "angle-down",class: "scf-icon"
+                %span.scf-sub 年
+
+          .src-code
+            %label.scf-title セキュリティーコード
+            %span.scf-logo 必須
+            %input.scf-input{placeholder: "カード背面4桁もしくは3桁の番号"}
+            .scf-question
+              %span.scf-question-icon ?
+              カード裏面の番号とは？
+
+          %a.button{href: "#"} 追加する

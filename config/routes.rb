@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       get "login"
       get "come_user"
       get "complete"
+      get "registration"
     end
   end
 

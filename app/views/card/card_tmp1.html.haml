@@ -1,11 +1,12 @@
 .main
+  .t-box_headers
+    = render 'top-page/header'
+  .head2
   .senter-box
     .left-content
-
+      = render 'profile-page/left'
     .right-content-pay
-
       .s-field__title 支払い方法
-
       .srp-content
         .srp-title クレジットカード一覧
         .scp-card
@@ -23,3 +24,6 @@
         .scp-links
           = link_to "支払い方法について","1",class: "scp-link"
           = fa_icon "chevron-right"
+
+  .t-box_footers
+    = render 'top-page/footer'

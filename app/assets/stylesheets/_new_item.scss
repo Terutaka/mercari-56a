@@ -150,11 +150,13 @@
 		}
 			.__shipping_box{
 				padding: 40px;
-				height: 300px;
+        height: 300px;
+        // widows: 100px;
 				border-bottom: solid 1px #F5F5F5;
 				border-top: solid 1px #F5F5F5;
 				width: 400px;
-				float: right;
+        float: right;
+        // display: flex;
 
 				._ship-from-region{
 					margin-top: 40px;

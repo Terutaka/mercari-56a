@@ -10,6 +10,9 @@ Rails.application.routes.draw do
       get "profile"
       get "mypage"
       get "exhibit"
+      get "new_user"
+      get "login"
+      get "come_user"
     end
   end
 

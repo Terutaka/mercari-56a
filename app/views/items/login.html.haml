@@ -1,0 +1,40 @@
+.backbox
+	.logo
+		= image_tag 'logo.jpg', size: '200x60'
+
+	.login_boxes
+		.new_login
+			アカウントをお持ちでない方はこちら
+			.new_ac_btn
+				新規会員登録
+		.main_login
+			.fb_login
+				= fa_icon 'facebook-official' , class: 'f-icon'
+				.fb_text
+					Facebookでログインする
+			.gl_login
+				= fa_icon 'google' , class: 'f-icon'
+				.gl_text
+					Googleでログインする
+			.login_form
+				%input.login-mail{name:"email", placeholder: "メールアドレス", type:"email", value:""}/
+				%input.login-password{name:"password", placeholder: "パスワード", type:"password", value:""}/
+			.g-recaptcha
+				= fa_icon 'check-square-o' , class: 'f-icon'
+				.bot_text
+					私はロボットではありません。
+			.login_btn01
+				ログイン
+			.password_forget
+				パスワードをお忘れの方
+
+
+
+	.footer
+		.footer__box
+			%ul
+				%li
+					プライバシーポリシー &nbsp;&nbsp;  メルカリ利用規約 &nbsp;&nbsp; 特定商取引に関する表記
+				%li
+					= image_tag 'gray-logo.jpg', size: '90x80'
+				%li ©︎2019 Mercari

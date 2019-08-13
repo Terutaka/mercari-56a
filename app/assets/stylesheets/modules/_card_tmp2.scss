@@ -1,0 +1,126 @@
+.right-content-card{
+  width: 700px;
+  height:50%;
+  // height: 562px;
+  background-color: #fff;
+  font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
+  .s-field__title{
+    height: 50px;
+    padding: 8px 24px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: solid 2px #f5f5f5
+  }
+  .s-card-form{
+    height: 512px;
+    padding: 40px 40px 60px;
+    box-sizing: border-box;
+    line-height: 1;
+    .scf-senter{
+      max-width: 343px;
+      height: 100%;
+      margin: 0 auto;
+      .scf-number{
+        height: 98px;
+        .scf-companies{
+          margin-top: 8px;
+          padding-right: 60px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      .scf-expire{
+        height: 70px;
+        margin-top: 32px;
+        .scf-select-wrap{
+          width: 49%;
+          margin-top: 8px;
+          display: inline-block;
+          position: relative;
+          .scf-expire-select{
+            width: calc(100% - 38px);
+            height: 48px;
+            padding: 0 16px;
+            background: 0;
+            font-size: 16px;
+            cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+          }
+          .scf-icon{
+            position: absolute;
+            right: 50px;
+            top: 13px;
+            font-size: 25px;
+            color: #888;
+          }
+        }
+      }
+      .src-code{
+        height: 93px;
+        margin-top: 32px;
+        .scf-question{
+          margin-top: 8px;
+          text-align: right;
+          font-size: 14px;
+          color: #0099e8;
+          .scf-question-icon{
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 14px;
+            font-size: 12px;
+            background-color: #0099e8;
+            color: #fff;
+          }
+        }
+      }
+      .button{
+        height: 50px;
+        margin-top: 32px;
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        text-decoration: none;
+        border: 1px solid #ea352d;
+        background: #ea352d;
+        color: #fff;
+      }
+    }
+  }
+}
+.scf-logo{
+  margin-left: 8px;
+  padding: 2px 4px;
+  vertical-align: top;
+  font-size: 12px;
+  border-radius: 2px;
+  background-color: #ea352d;
+  color: #fff;
+}
+.scf-title{
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: 600;
+}
+.scf-input{
+  width: 100%;
+  height: 48px;
+  padding: 10px 16px 8px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.scf-sub{
+  position: relative;
+  left: 8px;
+}

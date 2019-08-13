@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       get "buy"
       get "profile"
       get "mypage"
+      get "personal"
       get "exhibit"
       get "new_user"
       get "login"

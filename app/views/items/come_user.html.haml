@@ -1,0 +1,63 @@
+
+.kaiin_page
+  .kaiin_logo
+    = image_tag 'logo.jpg', size: '200x60'
+  .progress_var
+    %nav.progress
+      %ul.progress-bar
+        %li.through#through
+          会員情報
+          .progress-status
+          .progress-status_bar
+        %li.active#active
+          電話番号認証
+          .progress-status
+          .progress-status_bar
+        %li.address#address
+          お届け先住所入力
+          .progress-status
+          .progress-status_bar
+        %li.payment#payment
+          支払い方法
+          .progress-status
+          .progress-status_bar
+        %li.end#end
+          完了
+          .progress-status
+          .progress-status_bar
+
+
+
+  .nyuryoku_boxes
+    .lead_box01
+      会員情報入力
+    .main_box02
+      .nickname
+        ニックネーム
+        %span 必須
+        %input.login-nickname{name:"name", placeholder: "例）メルカリ太郎", type:"name", value:""}/
+      .mail_adress
+        メールアドレス
+        %span 必須
+        %input.login-mail{name:"mail", placeholder: "PC・ケータイどちらでも可", type:"mail", value:""}/
+      .password_01
+        パスワード
+        %span 必須
+        %input.login-pasword{name:"password", placeholder: "7文字以上", type:"password", value:""}/
+      .password_02
+        パスワード（確認）
+        %span 必須
+        %input.login-password{name:"password", placeholder: "7文字以上", type:"password", value:""}/
+      .no_bot
+        私はロボットではありません。
+      .next_btn
+        次へ進む
+
+  .footer
+    .footer__box
+      %ul
+        %li
+          プライバシーポリシー &nbsp;&nbsp;  メルカリ利用規約 &nbsp;&nbsp; 特定商取引に関する表記
+        %li
+          = image_tag 'gray-logo.jpg', size: '90x80'
+        %li ©︎2019 Mercari

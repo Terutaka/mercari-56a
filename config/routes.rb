@@ -19,6 +19,8 @@ Rails.application.routes.draw do
       get "mem_create3"
       get "mem_create4"
       get "mem_create5"
+      get "show"
+      get "logout"
     end
   end
 

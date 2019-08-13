@@ -1,0 +1,274 @@
+.top-element{
+  width: 100%;
+  height: 128px;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+.__top-heading{
+  width: 193px;
+  height: 49px;
+  margin:  0 auto;
+  padding: 40px 0px 0px 0px;
+}
+.main-element{
+  width: 100%;
+  height: 759.67px;
+  background-color: #f4f4f4;
+}
+.__fat-box{
+  width: 700px;
+  height: 759.67px;
+  margin: auto;
+  background-color: white;
+}
+.__medium-box{
+  width: 668px;
+  height: 33px;
+  padding: 16px;
+  text-align: center;
+}
+.__foundation-box{
+  width: 525px;
+  height: 286.344px;
+  padding: 24px 87.5500px 0px;
+  border-top: 1px solid #f5f5f5;
+}
+.__purchased-goods{
+  width: 320px;
+  height: 286.344px;
+  margin: 0px 102.500px;
+  max-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.__item-image-box{
+  width: 64px;
+  height: 64px;
+}
+.__item-name-box{
+  width: 240px;
+  height: 64px;
+  margin-left: 16px;
+}
+.__buy-details{
+  width: 320px;
+  height: 223px;
+}
+.__buy-price-container{
+  width: 320px;
+  height: 33px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+.__price-inside{
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+.__separately{
+  margin: 0 0 0 8px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 7px;
+}
+.__buy-point-box{
+  width: 320px;
+  height: 48px;
+  margin-top: 16px;
+  background-color: lightgrey;
+}
+.__point-in-box{
+  padding: 13px;
+  text-align: center;
+}
+.__buy-price-table{
+  width: 320px;
+  height: 60px;
+  display: flex;
+}
+.__p-payment{
+  width: 187px;
+  height: 28px;
+  padding: 16px 0px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.__p-amount{
+  width: 133px;
+  height: 28px;
+  padding: 16px 0px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 22px;
+}
+.__purchase-btn-box{
+  width: 318px;
+  height: 48px;
+  margin-top: 8px;
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+}
+.__p-inner{
+  padding: 13px;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+}
+.__during-box{
+  width: 525px;
+  height: 121.609px;
+  padding: 24px 87.500px 0px;
+  border-top: 1px solid #f5f5f5;
+  margin-top: 40px;
+}
+.__dbox-inner{
+  width: 320px;
+  height: 121.609px;
+  margin: 0 auto;
+}
+.__shipping{
+  width: 320px;
+  height: 14px;
+  font-size: 14px;
+}
+.__address{
+  width: 320px;
+  height: 76px;
+  margin-top: 8px;
+}
+.__postal-code{
+  width: 71.86px;
+  height: 18px;
+  font-size: 12px;
+}
+.__pc-location{
+  width: 310.92px;
+  height: 37px;
+  font-size: 14px;
+}
+.__buyer-name{
+  width: 200px;
+  height: 18px;
+  font-size: 14px;
+}
+.__info-text-box{
+  width: 320px;
+  height: 0px;
+  margin-top: 8px;
+  display: flex;
+}
+.__change-point{
+  width: 320px;
+  height: 15.609px;
+  display: flex;
+  color: #0099e8;
+}
+.__cp-btn{
+  width: 56px;
+  height: 18px;
+  font-size: 14px;
+  margin-left: auto;
+}
+.__cp-btn-icon{
+  padding-top: 4px;
+  margin: 0 0 0 8px;
+  font-size: 10px;
+}
+.__saucer{
+    width: 525px;
+    height: 91.719px;
+    padding: 24px 87.500px 40px;
+    border-top: 1px solid #f5f5f5;
+    margin-top: 40px;
+}
+.__sau-innner{
+    width: 320px;
+    height: 91.719px;
+    margin: 0 auto;
+}
+.__payment-method{
+  width: 320px;
+  height: 14px;
+  font-size: 14px;
+}
+.__pm__card-number{
+  width: 320px;
+  height: 38px;
+  margin-top: 8px;
+}
+.__number-secret{
+  width: 100.84px;
+  height: 18px;
+  font-size: 14px;
+}
+.__cn-date{
+  width: 38.33px;
+  height: 18px;
+  font-size: 14px;
+}
+.__pm__card-mark{
+  width: 320px;
+  height: 16.109px;
+}
+.earth{
+  width: 100%;
+  height: 220px;
+  position: relative;
+  background-color: #f4f4f4;
+}
+.__base{
+  width: 456px;
+  height: 140px;
+  padding: 40px 0px 40px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.__slender-box{
+  width: 456px;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+}
+.__p-policy{
+  width: 120px;
+  height: 12px;
+  font-size: 12px;
+}
+.__terms-of-service{
+  width: 96px;
+  height: 12px;
+  font-size: 12px;
+  margin-left: 13px;
+}
+.__commercial-transaction{
+  width: 132px;
+  height: 12px;
+  font-size: 12px;
+  margin-left: 13px;
+}
+.__footer-merlogo{
+  width: 88px;
+  height: 65px;
+  margin: 40px auto 0px;
+}
+.__m-small-box{
+  width: 456px;
+  height: 14px;
+  margin-top: 8px;
+}
+.__s-box-inner{
+  width: 100px;
+  height: 17px;
+  font-size: 13px;
+  margin: 0 auto;
+}

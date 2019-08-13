@@ -1,14 +1,14 @@
 .kaiin_page
   .kaiin_logo
-    = image_tag 'logo.jpg', size: '200x60'
+    = link_to image_tag('logo.jpg', size: '200x60'), root_path
   .progress_var
     %nav.progress
       %ul.progress-bar
-        %li.through#through
+        %li.through1#through1
           会員情報
           .progress-status
-          .progress-status_bar
-        %li.active#active
+          .progress-status_bar.progress-status_bar2
+        %li.active2#active2
           電話番号認証
           .progress-status
           .progress-status_bar

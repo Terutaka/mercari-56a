@@ -13,11 +13,11 @@ Rails.application.routes.draw do
       get "exhibit"
       get "new_user"
       get "login"
-      get "come_user"
-      get "complete"
-      get "registration"
-      get "telephone_number"
-      get "street_address"
+      get "mem_create1"
+      get "mem_create2"
+      get "mem_create3"
+      get "mem_create4"
+      get "mem_create5"
     end
   end
 

@@ -1,18 +1,18 @@
 .kaiin_page
   .kaiin_logo
-    = image_tag 'logo.jpg', size: '200x60'
+    = link_to image_tag('logo.jpg', size: '200x60'), root_path
   .progress_var
     %nav.progress
       %ul.progress-bar
-        %li.through#through
+        %li.through#through1
           会員情報
           .progress-status
-          .progress-status_bar
-        %li.active#active
+          .progress-status_bar.progress-status_bar3
+        %li.active2#active2
           電話番号認証
           .progress-status
-          .progress-status_bar
-        %li.address#address
+          .progress-status_bar.progress-status_bar3
+        %li.address3#address3
           お届け先住所入力
           .progress-status
           .progress-status_bar

@@ -1,0 +1,51 @@
+.kaiin_page
+  .kaiin_logo
+    = link_to image_tag('logo.jpg', size: '200x60'), root_path
+  .progress_var
+    %nav.progress
+      %ul.progress-bar
+        %li.through#through1
+          会員情報
+          .progress-status
+          .progress-status_bar.progress-status_bar5
+        %li.active2#active2
+          電話番号認証
+          .progress-status
+          .progress-status_bar.progress-status_bar5
+        %li.address3#address3
+          お届け先住所入力
+          .progress-status
+          .progress-status_bar.progress-status_bar5
+        %li.payment4#payment4
+          支払い方法
+          .progress-status
+          .progress-status_bar.progress-status_bar5
+        %li.end5#end5
+          完了
+          .progress-status
+          -# .progress-status_bar
+
+  .new_user
+    .ch_box
+      .ch_group
+        .ch_title
+          会員登録完了
+    .cm_box
+      .cm_group
+        .cm_message
+          ありがとうございます｡
+          %br
+          会員登録が完了しました｡
+    .cf_box
+      .cf_group
+        .cf_btn
+          = link_to "メルカリをはじめる", root_path,class: "cf-btn-title"
+
+  .footer
+    .footer__box
+      %ul
+        %li
+          プライバシーポリシー &nbsp;&nbsp;  メルカリ利用規約 &nbsp;&nbsp; 特定商取引に関する表記
+        %li
+          = image_tag 'gray-logo.jpg', size: '90x80'
+        %li ©︎2019 Mercari

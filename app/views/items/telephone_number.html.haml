@@ -1,4 +1,3 @@
-
 .kaiin_page
   .kaiin_logo
     = image_tag 'logo.jpg', size: '200x60'
@@ -26,33 +25,20 @@
           .progress-status
           .progress-status_bar
 
-
-
-  .nyuryoku_boxes
-    .lead_box01
-      会員情報入力
-    .main_box02
-      .nickname
-        ニックネーム
-        %span 必須
-        %input.login-nickname{name:"name", placeholder: "例）メルカリ太郎", type:"name", value:""}/
-      .mail_adress
-        メールアドレス
-        %span 必須
-        %input.login-mail{name:"mail", placeholder: "PC・ケータイどちらでも可", type:"mail", value:""}/
-      .password_01
-        パスワード
-        %span 必須
-        %input.login-pasword{name:"password", placeholder: "7文字以上", type:"password", value:""}/
-      .password_02
-        パスワード（確認）
-        %span 必須
-        %input.login-password{name:"password", placeholder: "7文字以上", type:"password", value:""}/
-      .no_bot
-        私はロボットではありません。
-      .next_btn
-        次へ進む
-
+  .telephone_boxes
+    .lead_box00
+      電話番号の確認
+    .telephone_main
+      携帯電話の番号
+      %input.telephone_num{name:"number", placeholder: "携帯電話の番号を入力", type:"number", value:""}/
+      .telephone_sms
+        本人確認のため、携帯電話のSMS(ショートメッセージサービス)を利用して認証を行います。
+      .sms_btn
+        SMSを送信する
+      .sms_message
+        ※電話番号は本人確認や不正利用防止のために利用します。他のユーザーに公開されることはありません。
+      .why_number
+        電話番号確認が必要な理由 》
   .footer
     .footer__box
       %ul

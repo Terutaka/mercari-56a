@@ -1,0 +1,44 @@
+.new_user{
+  width:720px;
+  text-align: center;
+  .ch_box{
+    position:relative;
+    top:30px;
+    width:100%;
+    height:50%;
+    margin:30px auto;
+    border-bottom: solid 1px #F5F5F5;
+    .ch_group{
+      padding:40px auto;
+      .ch_title{
+        font-size:30px;
+        line-height:50px;
+        margin:40px auto;
+      }
+    }
+  }
+  .cm_box{
+    margin:100px auto;
+  }
+  .cf_box{
+    width:90%;
+    margin:30px auto 40px;
+    .cf_group{
+      .cf_btn{
+        font-size:24px;
+        text-align:center;
+        background-color:red;
+        padding: 20px 0;
+        font-weight: 600;
+        margin-top:20px;
+        cursor: pointer;
+        position:relative;
+        bottom:20px;
+        .cf-btn-title{
+          color:white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

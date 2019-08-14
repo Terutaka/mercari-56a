@@ -1,11 +1,31 @@
-.main
-  .t-box_headers
-    = render 'top-page/header'
-  .head2
-  .senter-box
-    .left-content
-      = render 'profile-page/left'
+.kaiin_page
+  .kaiin_logo
+    = link_to image_tag('logo.jpg', size: '200x60'), root_path
+  .progress_var
+    %nav.progress
+      %ul.progress-bar
+        %li.through#through1
+          会員情報
+          .progress-status
+          .progress-status_bar.progress-status_bar4
+        %li.active2#active2
+          電話番号認証
+          .progress-status
+          .progress-status_bar.progress-status_bar4
+        %li.address3#address3
+          お届け先住所入力
+          .progress-status
+          .progress-status_bar.progress-status_bar4
+        %li.payment4#payment4
+          支払い方法
+          .progress-status
+          .progress-status_bar
+        %li.end#end
+          完了
+          .progress-status
+          .progress-status_bar
 
+  .telephone_boxes
     .right-content-card
       .s-field__title クレジットカード情報入力
       .s-card-form
@@ -51,7 +71,13 @@
               %span.scf-question-icon ?
               カード裏面の番号とは？
 
-          %a.button{href: "#"} 追加する
+          %a.button{href: "#"}  次へ進む
 
-  .t-box_footers
-    = render 'top-page/footer'
+  .footer
+    .footer__box
+      %ul
+        %li
+          プライバシーポリシー &nbsp;&nbsp;  メルカリ利用規約 &nbsp;&nbsp; 特定商取引に関する表記
+        %li
+          = image_tag 'gray-logo.jpg', size: '90x80'
+        %li ©︎2019 Mercari

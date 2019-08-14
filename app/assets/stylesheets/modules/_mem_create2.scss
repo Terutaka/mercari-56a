@@ -1,0 +1,65 @@
+  #active2{
+  color: #ea352d;
+  .progress-status{
+    background: #ea352d;
+  }
+}
+.progress-status_bar2{
+  background: #ea352d;
+  // width: 120px;
+}
+
+.telephone_boxes{
+  background-color:white;
+  width: 700px;
+  margin:0px auto;
+  margin-top:100px;
+  .lead_box00{
+    border-bottom: solid 1px #F5F5F5;
+    text-align: center;
+    font-size: 22px;
+    padding: 32px;
+    font-weight: bold;
+  }
+}
+  .telephone_main{
+    height: 360px;
+    padding: 40px 175px 64px;
+    display: block;
+    input {
+      height: 28px;
+      width: 309px;
+      padding: 10px 16px 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background: #fff;
+      line-height: 1.5;
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .telephone_sms{
+      margin-top: 10px;
+    }
+    .sms_btn{
+      text-align: center;
+      height: 50px;
+      width: 330px;
+      margin-top: 40px;
+      background-color:#ea352d;
+      border:1px solid #ea352d;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      line-height: 48px;
+    }
+    .sms_message{
+      margin-top: 10px;
+    }
+    .why_number{
+      color: #0099e8;
+      margin-top: 30px;
+      float: right;
+    }
+  }

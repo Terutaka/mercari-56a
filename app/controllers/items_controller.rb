@@ -4,6 +4,7 @@ class ItemsController < ApplicationController
     # @parents = Category.all.order("id ASC").limit(13)
   end
 
+<
   def new
     @item = Item.new
     @item.photos.build
@@ -16,6 +17,10 @@ class ItemsController < ApplicationController
     else
       render :index
     end
+  end
+
+  def show
+    
   end
   private
 

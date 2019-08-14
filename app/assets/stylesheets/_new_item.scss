@@ -99,7 +99,7 @@
 			}
 			._description{
 				margin-top: 40px;
-				& input {
+				._description__text {
 					overflow: auto;
 					width: 600px;
 					min-height: 104px;
@@ -109,11 +109,6 @@
 					background: #fff;
 					font-size: 16px;
 					border-radius: 4px;
-
-					::placeholder{
-					text-align: left;
-					word-wrap: break-word;
-					}
 				}
 			}
 		}
@@ -182,7 +177,7 @@
 						width: 50%;
 						left: 220px;
 						bottom: 10px;
-						display: inline-block;  
+						display: inline-block;
 						p {
 							display: inline-block;
 							margin-right: 10px;
@@ -240,26 +235,30 @@
 
 		}
 	}
-	&__submit{
+	.contents__submit{
 		padding: 40px;
 		text-align: left;
-		& a{
-			line-height: 1.5;
-		}
-		&_go-btn{
+		&__go-btn{
+      width: 100%;
+      display: block;
 			text-align: center;
 			color: #fff;
 			background-color: #ea352d;
 			margin: 40px 0 0;
-			line-height: 48px;
+      line-height: 48px;
+      font-size: 16px;
+      cursor: pointer;
 		}
-		&_back-btn{
-			width: 45%;
+		&__back-btn{
+      display: block;
+      width: 45%;
+      height:50px;
 			text-align: center;
 			margin: 24px auto 0;
 			color: #fff;
 			background-color: #aaa;
-			line-height: 48px;
+      line-height: 50px;
+      text-decoration: none;
 		}
 	}
 }

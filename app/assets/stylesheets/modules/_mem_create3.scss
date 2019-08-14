@@ -1,33 +1,19 @@
-  #address.address{
-    color: #ea352d;
-    .progress-status{
-      background: #ea352d;
-    }
+#address3{
+  color: #ea352d;
+  .progress-status{
+    background: #ea352d;
   }
-
-  #through{
-    color: gray;
-    .progress-status{
-      background: #ea352d;
-    }
-  }
-
-  #through .progress-status_bar{
-      background: #ea352d;
-    }
-    #active{
-      color: gray;
-      .progress-status_bar{
-        background: #ea352d;
-      }
-    }
+}
+.progress-status_bar3{
+  background: #ea352d;
+}
 
 
 .address_boxes{
   width: 700px;
   background-color: #fff;
   margin: 0 auto;
-  margin-top: 42px;
+  margin-top:100px;
 }
   .address_lead{
     padding: 30px 0px;

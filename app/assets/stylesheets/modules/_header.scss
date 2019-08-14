@@ -1,5 +1,5 @@
 .t-box_headers{
-  height: 100px;
+  height: 125px;
   width: 100%;
   z-index: 101;
   background-color: white;
@@ -13,7 +13,7 @@
       width: 100%;
       display: inline-flex;
       .tbh-logo{
-        height: 50px;
+        height: 80px;
         width: 144px;
         margin-right:50px;
         margin-left:20px;
@@ -32,7 +32,7 @@
             height: 36px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            line-height: 1.5;
+            line-height: 1.2;
             font-size: 16px;
             &:focus{
               border: 1px solid green;
@@ -41,71 +41,82 @@
           }
           .tbh-form__search__btn{
             position: absolute;
-              top: 9px;
+              top: 29px;
               right: 10px;
               color: #333;
           }
         }
       }
     }
-    .tbh-filed__select{
-      display: inline-block;
-			position: absolute;
-			left: 5px;
-			top: 50px;
-			color: #333;
-      .tbh-st__group{
-        display: flex;
-        padding-left:20px;
-        .tbh-icon{
-          color: #ea352d;
-        }
-        .tbh-st-list_btn{
-          height: 38px;
-          line-height: 32px;
-          padding: 10px;
-          font-size: 14px;
-          &:hover{
-            cursor: pointer;
+    .tbh-filed_all{
+      height:100px;
+      width:100%;
+      .tbh-filed__select{
+        display: inline-block;
+        position: absolute;
+        left: 5px;
+        top: 80px;
+        // width:50%;
+        // float:left;
+        color: #333;
+        .tbh-st__group{
+          display: flex;
+          padding-left:20px;
+          .tbh-icon{
+            color: #ea352d;
+          }
+          .tbh-st-list_btn{
+            height: 38px;
+            line-height: 32px;
+            padding: 10px;
+            font-size: 14px;
+            &:hover{
+              cursor: pointer;
+            }
           }
         }
       }
-    }
-    .tbh-filed__userbox{
-      display: inline-block;
-      position: absolute;
-      right: 95px;
-      top: 50px;
-      line-height: 32px;
-      .tbh-ub__group{
-        display: flex;
-        .tbh-st-signup{
-          height: 32px;
-					font-size: 13px;
-					display: inline-block;
-					color: #fff;
-					border: 1px solid #ea352d;
-					background-color: #ea352d;
-          padding: 0 10px;
-          margin-right: 10px;
-          border-radius: 4px;
-          &:hover{
-						cursor: pointer;
-					}
-        }
-        .tbh-st-login{
-          height: 32px;
-					font-size: 13px;
-					display: inline-block;
-					color: #0099e8;
-					border: 1px solid #0099e8;
-					padding: 0 10px;
-					border-radius: 4px;
-          &:hover{
-						color: #fff;
-						border: 1px solid #0099e8;
-						background-color: #0099e8;
-            cursor: pointer;
+      .tbh-filed__userbox{
+        display: inline-block;
+        position: absolute;
+        right: 55px;
+        // left: 10px;
+        top: 80px;
+        text-align: right;
+        // display: block;
+        // width:50%;
+        // float:right;
+        line-height: 32px;
+        .tbh-ub__group{
+          display: flex;
+          .tbh-st-signup{
+            height: 32px;
+            font-size: 13px;
+            display: inline-block;
+            color: #fff;
+            border: 1px solid #ea352d;
+            background-color: #ea352d;
+            padding: 0 10px;
+            margin-right: 10px;
+            border-radius: 4px;
+            &:hover{
+              cursor: pointer;
+            }
+          }
+          .tbh-st-login{
+            height: 32px;
+            font-size: 13px;
+            display: inline-block;
+            color: #0099e8;
+            border: 1px solid #0099e8;
+            padding: 0 10px;
+            border-radius: 4px;
+            &:hover{
+              color: #fff;
+              border: 1px solid #0099e8;
+              background-color: #0099e8;
+              cursor: pointer;
+            }
           }
         }
       }

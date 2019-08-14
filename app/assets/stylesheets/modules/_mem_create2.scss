@@ -1,31 +1,19 @@
-  .end .progress-status_bar {
-    width: 0px;
+  #active2{
+  color: #ea352d;
+  .progress-status{
+    background: #ea352d;
   }
-  .payment .progress-status_bar {
-    width: 100px;
-  }
-  #through{
-    color: gray;
-    .progress-status{
-      background: #ea352d;
-    }
-  }
-
-  #through .progress-status_bar{
-      background: #ea352d;
-    }
-    #active{
-      color:#ea352d;
-      .progress-status{
-        background: #ea352d;
-      }
-    }
+}
+.progress-status_bar2{
+  background: #ea352d;
+  // width: 120px;
+}
 
 .telephone_boxes{
   background-color:white;
   width: 700px;
   margin:0px auto;
-  margin-top:50px;
+  margin-top:100px;
   .lead_box00{
     border-bottom: solid 1px #F5F5F5;
     text-align: center;

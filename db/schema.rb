@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(version: 2019_08_11_054001) do
     t.integer "shipping_date", null: false
     t.integer "price", null: false
     t.integer "prefecture_id", null: false
-    t.integer "seller_id"
+    t.integer "saler_id"
     t.integer "buyer_id"
     t.integer "likes_count"
     t.datetime "created_at"

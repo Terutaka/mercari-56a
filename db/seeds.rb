@@ -19,5 +19,7 @@ Brand.create(:name=>"ナエキ")
 Brand.create(:name=>"シュプリーム")
 Brand.create(:name=>"アディダス")
 
-User.create(:nickname => 'aaaaa',:email => 'hogehoge@hoge.com', :password => 'hugahuga')
+User.create(:nickname => 'aaaaa',:last_name => 'aaa',:lfirst_name => 'bbb',:last_name_kana => 'cccc', :first_name_kana => 'dddd',:birthday => '19990922',:profile => 'oaaooaoao',:email => 'hogehoge@hoge.com', :password => 'hugahuga', :user_detail_id => '1')
+
+UserDetail.create(:user_id => '1',:postal_code => 'ad121212',:city =>'kakakak', :address => 'lallala', :building =>'kakaka', :phone_number => '0909199da')
 

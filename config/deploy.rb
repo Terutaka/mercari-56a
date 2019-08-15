@@ -14,7 +14,7 @@ namespace :deploy do
     invoke 'unicorn:restart'
   end
   task :seed do
-    run "cd /var/www/mercari-56a/current; rake db:seed RAILS_ENV=production"
+    run "cd #{current_path}; rake db:seed RAILS_ENV=production"
   end
 end
 

@@ -38,7 +38,7 @@ desc 'reload the database with seed data'
     end
   end
 
-  after  :migrate,      :seed
+  # after  :migrate,      :seed
 
 # set :rails_env, "production"
 # set :unicorn_rack_env, "production"

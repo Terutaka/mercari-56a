@@ -28,7 +28,7 @@ set :default_env, {
 set :linked_files, fetch(:linked_files, []).push("config/master.key")
 
 task :seed do
-  run "cd #{current_path}; rake db:seed RAILS_ENV=production"
+  run "cd /var/www/mercari-56a/current; rake db:seed RAILS_ENV=production"
 end
 
 

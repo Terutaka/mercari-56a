@@ -1,20 +1,21 @@
 .tbh-all__group
   .tbh-filed__logo
-    = image_tag("mercari_logo_horizontal",class: "tbh-logo")
+    = link_to image_tag("mercari_logo_horizontal",class: "tbh-logo"), root_path
     .tbh-filed__form
       %form.tbh-b__group
         %input{placeholder: "何かお探しですか？", class: "tbh-form__input"}
         %label{for: "tbh-form__input"}
           = fa_icon "search", class: "tbh-form__search__btn"
 
-  .tbh-filed__select
-    %ul.tbh-st__group
-      %li
-        %i.fa.fa-list-ul{"aria-hidden" => "true",class: "tbh-icon"}
-        %a.tbh-st-list_btn カテゴリーから探す
-      %li
-        %i.fa.fa-tag{"aria-hidden" => "true",class: "tbh-icon"}
-        %a.tbh-st-list_btn ブランドから探す
+  .tbh-filed_all
+    .tbh-filed__select
+      %ul.tbh-st__group
+        %li
+          %i.fa.fa-list-ul{"aria-hidden" => "true",class: "tbh-icon"}
+          %a.tbh-st-list_btn カテゴリーから探す
+        %li
+          %i.fa.fa-tag{"aria-hidden" => "true",class: "tbh-icon"}
+          %a.tbh-st-list_btn ブランドから探す
 
   .tbh-filed__userbox
     %ul.tbh-ub__group

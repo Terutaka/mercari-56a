@@ -10,7 +10,10 @@
 }
 .main{
   width: 100%;
-  height: 1292px;
+  height: 100%;
+  // margin-bottom:10px;
+  // height: calc(100% + 10px);
+  // height: 1292px;
   background-color: #f4f4f4;
 }
   .senter-box{
@@ -21,7 +24,8 @@
   }
     .left-content{
       width: 280px;
-      height: 1212px;
+      // height: 1212px;
+      height:100%;
       margin-right: 40px;
     }
     .__s-lists{

@@ -1,14 +1,15 @@
 .main
+  .t-box_headers
+    = render 'top-page/header'
+  .head2
   .senter-box
     .left-content
+      = render 'profile-page/left'
 
     .right-content-card
-
       .s-field__title クレジットカード情報入力
-
       .s-card-form
         .scf-senter
-
           .scf-number
             %label.scf-title カード番号
             %span.scf-logo 必須
@@ -51,3 +52,6 @@
               カード裏面の番号とは？
 
           %a.button{href: "#"} 追加する
+
+  .t-box_footers
+    = render 'top-page/footer'

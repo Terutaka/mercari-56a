@@ -1,0 +1,78 @@
+.kaiin_page
+  .kaiin_logo
+    = link_to image_tag('logo.jpg', size: '200x60'), root_path
+  .progress_var
+    %nav.progress
+      %ul.progress-bar
+        %li.through#through1
+          会員情報
+          .progress-status
+          .progress-status_bar.progress-status_bar3
+        %li.active2#active2
+          電話番号認証
+          .progress-status
+          .progress-status_bar.progress-status_bar3
+        %li.address3#address3
+          お届け先住所入力
+          .progress-status
+          .progress-status_bar
+        %li.payment#payment
+          支払い方法
+          .progress-status
+          .progress-status_bar
+        %li.end#end
+          完了
+          .progress-status
+          .progress-status_bar
+
+  .address_boxes
+    .address_lead
+      住所入力
+    .address_main
+      .address_name
+        お名前
+        %span 必須
+        %input{name:"name", placeholder: "例）山田", type:"name", value:""}/
+        %input{name:"name", placeholder: "例）彩", type:"name", value:""}/
+      .address_kana
+        お名前カナ
+        %span 必須
+        %input{name:"name", placeholder: "例）ヤマダ", type:"number", value:""}/
+        %input{name:"name", placeholder: "例）アヤ", type:"name", value:""}/
+      .address_yubin
+        郵便番号
+        %span 必須
+        %input{name:"number", placeholder: "例）123-4567", type:"number", value:""}/
+      .address_prefectures
+        都道府県
+        %span 必須
+        %select
+      .address_town
+        市区町村
+        %span 必須
+        %input{name:"name", placeholder: "例）横浜市緑区", type:"name", value:""}/
+      .address_banti
+        番地
+        %span 必須
+        %input{name:"name", placeholder: "例）青山1-1-1", type:"name", value:""}/
+      .address_bill
+        建物名
+        %span 任意
+        %input{name:"name", placeholder: "例）柳ビル103", type:"name", value:""}/
+      .address_number
+        電話
+        %span 任意
+        %input{name:"number", placeholder: "例）09012345678", type:"number", value:""}/
+      .next_btn00
+        次へ進む
+
+    
+
+  .footer
+    .footer__box
+      %ul
+        %li
+          プライバシーポリシー &nbsp;&nbsp;  メルカリ利用規約 &nbsp;&nbsp; 特定商取引に関する表記
+        %li
+          = image_tag 'gray-logo.jpg', size: '90x80'
+        %li ©︎2019 Mercari

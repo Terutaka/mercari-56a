@@ -14,7 +14,13 @@ namespace :deploy do
     invoke 'unicorn:restart'
   end
   task :seed do
-    run "cd #{current_path}; rake db:seed RAILS_ENV=production"
+    on roles(:app) do
+      with rails_env: fetch(:rails_env) do
+        within current_path do
+          execute :bundle, :exec, :rake, 'db:seed'
+        end
+      end
+    end
   end
 end
 

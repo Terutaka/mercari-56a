@@ -13,6 +13,9 @@ namespace :deploy do
   task :restart do
     invoke 'unicorn:restart'
   end
+  task :seed do
+    run "cd /var/www/mercari-56a/current; rake db:seed RAILS_ENV=production"
+  end
 end
 
 set :default_env, {
@@ -27,12 +30,12 @@ set :default_env, {
 }
 set :linked_files, fetch(:linked_files, []).push("config/master.key")
 
-namespace :deploy do
-  desc "reload the database with seed data"
-  task :seed do
-    run "cd /var/www/mercari-56a/current; rake db:seed RAILS_ENV=production"
-  end
-end
+# namespace :deploy do
+#   desc "reload the database with seed data"
+#   task :seed do
+#     run "cd /var/www/mercari-56a/current; rake db:seed RAILS_ENV=production"
+#   end
+# end
 
 
 # rake db:seed RAILS_ENV=production

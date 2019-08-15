@@ -7,6 +7,7 @@ set :rbenv_ruby, '2.5.1'
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
 set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
 set :keep_releases, 5
+
 after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
   task :restart do
@@ -25,6 +26,19 @@ set :default_env, {
   PAYJP_KEY: ENV["PAYJP_KEY"]
 }
 set :linked_files, fetch(:linked_files, []).push("config/master.key")
+
+desc 'reload the database with seed data'
+  task :seed do
+    on roles(:db) do
+      with rails_env: fetch(:rails_env) do
+        within release_path do
+          execute :bundle, :exec, :rake, 'db:seed'
+        end
+      end
+    end
+  end
+
+  after  :migrate,      :seed
 
 # set :rails_env, "production"
 # set :unicorn_rack_env, "production"

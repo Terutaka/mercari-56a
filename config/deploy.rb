@@ -13,15 +13,6 @@ namespace :deploy do
   task :restart do
     invoke 'unicorn:restart'
   end
-  task :seed do
-    on roles(:app) do
-      with rails_env: fetch(:rails_env) do
-        within current_path do
-          execute :bundle, :exec, :rake, 'db:seed'
-        end
-      end
-    end
-  end
 end
 
 set :default_env, {

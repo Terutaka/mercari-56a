@@ -27,7 +27,7 @@ set :default_env, {
 }
 set :linked_files, fetch(:linked_files, []).push("config/master.key")
 
-cap invoke COMMAND="cd /var/www/mercari-56a/current; rake db:seed RAILS_ENV=production"
+cap invoke COMMAND="cd /var/www/mercari-56a/current; RAILS_ENV=production bundle exec rake db:seed"
 # rake db:seed RAILS_ENV=production
 
 # set :rails_env, "production"

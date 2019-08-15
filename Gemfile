@@ -63,3 +63,4 @@ gem 'ancestry'
 gem 'devise'
 gem 'payjp'
 gem 'rack-dev-mark'
+gem "gretel"

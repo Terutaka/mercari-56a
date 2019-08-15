@@ -1,12 +1,21 @@
   .head{
     width: 100%;
     height: 49px;
+    border-top: 1px solid #eee;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.16);
+    background: #fff;
   }
   .head2{
     width: 100%;
     height: 40px;
     background-color: #f4f4f4
   }
+  .breadcrumbs-list{
+    & a {
+      text-decoration: none;
+    }
+  }
+
   .mainoreo{
     width: 100%;
     height: 1292px;
@@ -232,4 +241,3 @@
               font-size: 16px;
               color: #ccc;
             }
-    

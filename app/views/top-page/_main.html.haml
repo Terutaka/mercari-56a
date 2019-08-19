@@ -13,61 +13,7 @@
       レディース新着アイテム
 
     .tbm-group__containers
-      %section.tbm-c__item
-        %a{:href => "https://www.google.com",class: "tbm-c__link"}
-          %figure.tbm-c__link_figure
-            = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
-        .tbm-c__text
-          .tbm-c__name
-            %h3 メルカリ商品
-          .tbm-c__box
-            .tbm-c__price ¥800
-            .tbm-c__good
-              = fa_icon "heart-o", class: ".tbm-c__good_btn"
-              %span.tbm-c__good_count 3
-          %p.tbm-c__text_tax
-
-      %section.tbm-c__item
-        %a{:href => "https://www.google.com",class: "tbm-c__link"}
-          %figure.tbm-c__link_figure
-            = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
-        .tbm-c__text
-          .tbm-c__name
-            %h3 メルカリ商品
-          .tbm-c__box
-            .tbm-c__price ¥800
-            .tbm-c__good
-              = fa_icon "heart-o", class: ".tbm-c__good_btn"
-              %span.tbm-c__good_count 3
-          %p.tbm-c__text_tax
-
-      %section.tbm-c__item
-        %a{:href => "https://www.google.com",class: "tbm-c__link"}
-          %figure.tbm-c__link_figure
-            = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
-        .tbm-c__text
-          .tbm-c__name
-            %h3 メルカリ商品
-          .tbm-c__box
-            .tbm-c__price ¥800
-            .tbm-c__good
-              = fa_icon "heart-o", class: ".tbm-c__good_btn"
-              %span.tbm-c__good_count 3
-          %p.tbm-c__text_tax
-
-      %section.tbm-c__item
-        %a{:href => "https://www.google.com",class: "tbm-c__link"}
-          %figure.tbm-c__link_figure
-            = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
-        .tbm-c__text
-          .tbm-c__name
-            %h3 メルカリ商品
-          .tbm-c__box
-            .tbm-c__price ¥800
-            .tbm-c__good
-              = fa_icon "heart-o", class: ".tbm-c__good_btn"
-              %span.tbm-c__good_count 3
-          %p.tbm-c__text_tax
+      = render partial: 'items/items'
 
     .tbm-group__more
       %a.tbm-more__link
@@ -78,61 +24,7 @@
       メンズ新着アイテム
 
     .tbm-group__containers
-      %section.tbm-c__item
-        %a{:href => "https://www.google.com",class: "tbm-c__link"}
-          %figure.tbm-c__link_figure
-            = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
-        .tbm-c__text
-          .tbm-c__name
-            %h3 メルカリ商品
-          .tbm-c__box
-            .tbm-c__price ¥800
-            .tbm-c__good
-              = fa_icon "heart-o", class: ".tbm-c__good_btn"
-              %span.tbm-c__good_count 3
-          %p.tbm-c__text_tax
-
-      %section.tbm-c__item
-        %a{:href => "https://www.google.com",class: "tbm-c__link"}
-          %figure.tbm-c__link_figure
-            = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
-        .tbm-c__text
-          .tbm-c__name
-            %h3 メルカリ商品
-          .tbm-c__box
-            .tbm-c__price ¥800
-            .tbm-c__good
-              = fa_icon "heart-o", class: ".tbm-c__good_btn"
-              %span.tbm-c__good_count 3
-          %p.tbm-c__text_tax
-
-      %section.tbm-c__item
-        %a{:href => "https://www.google.com",class: "tbm-c__link"}
-          %figure.tbm-c__link_figure
-            = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
-        .tbm-c__text
-          .tbm-c__name
-            %h3 メルカリ商品
-          .tbm-c__box
-            .tbm-c__price ¥800
-            .tbm-c__good
-              = fa_icon "heart-o", class: ".tbm-c__good_btn"
-              %span.tbm-c__good_count 3
-          %p.tbm-c__text_tax
-
-      %section.tbm-c__item
-        %a{:href => "https://www.google.com",class: "tbm-c__link"}
-          %figure.tbm-c__link_figure
-            = image_tag 'mercari.jpg', size: '230x255', class: "tbm-c-image"
-        .tbm-c__text
-          .tbm-c__name
-            %h3 メルカリ商品
-          .tbm-c__box
-            .tbm-c__price ¥800
-            .tbm-c__good
-              = fa_icon "heart-o", class: ".tbm-c__good_btn"
-              %span.tbm-c__good_count 3
-          %p.tbm-c__text_tax
+      = render partial: 'items/items'
 
     .tbm-group__more
       %a.tbm-more__link

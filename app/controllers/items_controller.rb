@@ -1,30 +1,32 @@
 class ItemsController < ApplicationController
-
+before_action :set_category
   def index
-    # @parents = Category.all.order("id ASC").limit(13)
+
   end
 
   def new
     @item = Item.new
     @item.photos.build
   end
-
+  
   def create
-    @item = Item.new(name: 'aaa',explain: 'bbbbb',state: 1,fee_side: 1,prefecture_id: 1,shipping_date: 1,price: 9999,category_id: 1,photo_id: 1,size: '1',brand_id: '1',saler_id: '1',buyer_id: '1',likes_count: '1')
-    # @item += (name: 'aaa',explain: 'bbbbb',state: '1',fee_side: '1',prefecture_id: '1',shipping_date: '1',price: '9999',category_id: '1',photo_id: '1',size: '1',brand_id: '1',seller_id: '1',buyer_id: '1',likes_count: '1')
-    if @item.save!
+    @item = Item.new(create_params)
+    if @item.save
+      redirect_to action: 'new'
     else
       render :index
     end
   end
 
-  def show
-    
-  end
   private
 
-  # def create_params
-  #   params.require(:item).permit(:name,:explain,:state,:fee_side,:prefecture_id,:shipping_date,:price,:category_id)
-  # end
+  def create_params
+    params.require(:item).permit(:brand_id,:name,:explain,:state_id,:fee_side_id,:prefecture_id,:shipping_date_id,:price,:category_id,photos_attributes: [:img_list]).merge(user_id: 1)
+  end
+
+  def set_category
+    @parents = Category.all.order("id ASC").where(ancestry: nil)
+    @fee_side = ["あああ",1],["着払い（購入者負担）",2]
+  end
 
 end

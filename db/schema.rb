@@ -19,12 +19,6 @@ ActiveRecord::Schema.define(version: 2019_08_11_054001) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "brands", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "cards", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "user_id", null: false
     t.string "customer_id", null: false
@@ -42,15 +36,14 @@ ActiveRecord::Schema.define(version: 2019_08_11_054001) do
   end
 
   create_table "items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "photo_id"
+    t.integer "user_id", null: false
     t.string "name", null: false
     t.string "explain", null: false
-    t.integer "category_id"
-    t.string "size"
-    t.string "state", null: false
-    t.integer "brand_id"
-    t.integer "fee_side", null: false
-    t.integer "shipping_date", null: false
+    t.integer "category_id", null: false
+    t.string "state_id", null: false
+    t.integer "fee_side_id", null: false
+    t.integer "shipping_date_id", null: false
+    t.integer "brand_id", null: false
     t.integer "price", null: false
     t.integer "prefecture_id", null: false
     t.integer "saler_id"
@@ -65,12 +58,6 @@ ActiveRecord::Schema.define(version: 2019_08_11_054001) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "item_id"
-  end
-
-  create_table "prefectures", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "user_details", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

@@ -11,8 +11,8 @@
           %h4 出品画像
           %span 必須
           %p 最大10枚までアップロードできます
-          -# = f.fields_for :photos do |photo|
-          -#   = photo.file_field :img_list,placeholder: "ドラッグアンドドロップ   またはクリックしてファイルをアップロード", id: "book_img",class: "__dropping"
+          = f.fields_for :photos do |photo|
+            = photo.file_field :img_list,placeholder: "ドラッグアンドドロップ   またはクリックしてファイルをアップロード", id: "book_img",class: "__dropping"
 
 
         .__item-info
@@ -27,46 +27,49 @@
         .-about.clearfix
           %h3 商品の詳細
           .__item-about
-            .new_box
+            ._box
               .__category
                 %h4 カテゴリー
                 %span 必須
-                = f.select :category_id,[["新品、未使用",1], ["未使用に近い",2],["目立った傷や汚れなし",3], ["やや傷や汚れあり",4]], class: "contents__item-about_box_condition_input",prompt: "---"
+                = f.collection_select :category_id, @parents,:id,:name,{prompt: "---"},class: "contents__item-about_box_condition_input",id: "parent-form"
+              .__burand
+                %h4 ブランド
+                %span 任意
+                = f.collection_select :brand_id, Brand.all,:id,:name,{prompt: "---"},class: "contents__item-about_box_condition_input"
               ._condition
                 %h4 商品の状態
                 %span 必須
-                = f.select :state, [["新品、未使用",1], ["未使用に近い",2],["目立った傷や汚れなし",3], ["やや傷や汚れあり",4],["傷や汚れあり",5],["全体的に状態が悪い",6]], class: "contents__item-about_box_condition_input",prompt: "---"
+                = f.collection_select :state_id, State.all,:id,:name,{prompt: "---"} ,class: "contents__item-about_box_condition_input"
         .__shipping.clearfix
           %h3 配送について
           .__shipping_box
             .__shipping_box_charge
               %h4 配送料の負担
               %span 必須
-              = f.select :fee_side,[["送料込み（出品者負担）",1],["着払い（購入者負担）",2]], class: "contents__shipping_box_charge_input",prompt: "---"
-              -# =if @select == 1
+              = f.select :fee_side_id,@fee_side,prompt: "---", class: "contents__shipping_box_charge_input"
             .__shipping_box_ship-from-region
               %h4 発送元の地域
               %span 必須
-              = f.collection_select :prefecture_id, Prefecture.all, :id, :name,class: "contents__shipping_box_from-region-input",prompt: "---"
+              = f.collection_select :prefecture_id, Prefecture.all, :id, :name,prompt: "---",class: "contents__shipping_box_from-region-input"
             .__shipping_box_date
               %h4 発送までの日数
               %span 必須
-              = f.select :shipping_date,[["1~2日で発送",1],["2~3日で発送",2],["4~7日で発送",3]], class:"contents__shipping_box_date_input",prompt: "---"
+              = f.collection_select :shipping_date_id,ShippingDate.all,:id, :name,prompt: "---", class:"contents__shipping_box_date_input"
         .__price.clearfix
           %h3 販売価格(300〜9,999,999)
           .new_box
             %ul
               %li._list_top.clearfix
-                ._list_top_label
+                ._list_top__label
                   %h4 価格
                   %span<> 必須
-                ._list_top_right
-                  = f.text_field :price,placeholder:"例）¥300"
+                ._list_top__right
+                  = f.text_field :price,placeholder:"例）300",id: "input_price"
               %li._list
                 %pre._list_text 販売手数料（10%）                                     -
               %li._list
-                %pre.h5 販売利益                                            -
-        .contents__submit
+                %pre.h5#calculation 販売利益                                            -
+        .new_contents__submit
           %a<>禁止されている出品
           、
           %a<>行為
@@ -79,8 +82,8 @@
           また、出品をもちまして
           %a<>加盟店規約
           に同意したことになります。
-          = f.submit "出品する",class: "contents__submit__go-btn"
-          %a.contents__submit__back-btn{href: "/"} もどる
+          = f.submit "出品する",class: "new_contents__submit__go-btn"
+          %a.new_contents__submit__back-btn{href: "/"} もどる
 
   .footer
     .footer__box

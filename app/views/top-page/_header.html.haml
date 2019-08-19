@@ -35,6 +35,6 @@
       .tbh-filed__userbox
         %ul.tbh-ub__group
           %li
-            %a.tbh-st-signup 新規会員登録
+            = link_to "新規会員登録 ", new_create_user_items_path, class: "#a tbh-st-signup"
           %li
-            %a.tbh-st-login ログイン
+            = link_to "ログイン", login_items_path, class: "tbh-st-login"

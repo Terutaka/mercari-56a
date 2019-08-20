@@ -63,3 +63,6 @@ gem 'ancestry'
 gem 'devise'
 gem 'payjp'
 gem 'rack-dev-mark'
+# ==================== Add gem lists4 ====================
+
+gem 'rspec-rails'

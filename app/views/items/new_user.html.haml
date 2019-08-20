@@ -2,7 +2,7 @@
 	.logo
 		= image_tag 'logo.jpg', size: '200x60'
 
-	.new_user
+	.new_create_user
 		.h_square
 			新規会員登録
 		.m_square
@@ -10,7 +10,8 @@
 				.mail_btn
 					= fa_icon 'envelope-o', class: 'f-icon'
 					.mail_text
-					= link_to "メールアドレスで登録する", root_path,class: "mail_btn"
+					= link_to "メールアドレスで登録する", new_user_registration_path, class: "mail_btn"
+					-# = link_to "メールアドレスで登録する", mem_create1_items_path, class: "mail_btn"
 				.fb_btn
 					= fa_icon 'facebook-official' , class: 'f-icon'
 					.fb_text

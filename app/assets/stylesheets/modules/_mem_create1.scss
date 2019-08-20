@@ -72,78 +72,100 @@
 
   .nyuryoku_boxes{
     background-color:white;
+    // background-color:orange;
     width: 700px;
+    // width:50%;
     margin:0px auto;
     margin-top:100px;
     .lead_box01{
       border-bottom: solid 1px #F5F5F5;
       text-align: center;
       font-size: 22px;
-      padding: 32px;
+      padding-top: 32px;
       font-weight: bold;
-    }
-    .main_box02{
-      padding: 40px 40px 64px;
-      display: block;
-      text-align: center;
-      input {
-        height: 28px;
-        width: 309px;
-        padding: 10px 16px 8px;
-        border-radius: 4px;
-        border: 1px solid #ccc;
-        background: #fff;
-        line-height: 1.5;
-        font-size: 16px;
-      }
-      & span{
-        margin: 5px;
-        padding: 2px 4px;
-        border-radius: 2px;
-        color: #fff;
-        font-size: 12px;
-        background-color: #ea352d;
-        display: inline-block;
-      }
-      .nickname{
-        width: 150px;
-        margin: 10px 130px;
-        clear: both;
-      }
-      .mail_adress{
-        width: 190px;
-        margin: 10px 130px;
-      }
-      .password_01{
-        width: 130px;
-        margin: 10px 130px;
-      }
-      .password_02{
-        width: 200px;
-        margin: 10px 130px;
+      width: 100%;
+      .main_box02{
+        padding: 40px 40px 64px;
+        // display: block;
+        margin:0px auto;
+        width: 50%;
+        // float:left;
+        // text-align: center;
+        // background-color:green;
+        // input {
+        //   height: 28px;
+        //   width: 309px;
+        //   padding: 10px 16px 8px;
+        //   border-radius: 4px;
+        //   border: 1px solid #ccc;
+        //   background: #fff;
+        //   line-height: 1.5;
+        //   font-size: 16px;
+        // }
+        & span{
+          margin: 5px;
+          padding: 2px 4px;
+          border-radius: 2px;
+          color: #fff;
+          font-size: 12px;
+          background-color: #ea352d;
+          // display: inline-block;
+        }
+        .main_box2_left{
+          width: 100%;
+          float:left;
+        .nickname{
+          // width: 150px;
+          margin: 10px 130px;
+          clear: both;
+        }
+        .mail_adress{
+          // width: 100%;
+          // width: 190px;
+          margin: 10px 130px;
+        }
+        .password_01{
+          // width: 100%;
+          // width: 130px;
+          margin: 10px 130px;
+        }
+        .password_02{
+          // width: 200px;
+          // width: 100%;
+          margin: 10px 130px;
+        }
       }
       .no_bot{
         text-align: center;
+        // float:center;
         margin: 24px 0 0;
-        width: 284px;
+        width: 80%;
+        // width: 284px;
         height: 78px;
-        transform: none;
+        // transform: none;
         border: 1px solid #ccc;
         padding: 0px 20px;
         display: flex;
         margin-left: 135px;
       }
       .next_btn{
-      height: 50px;
-      width: 315px;
-      margin-top: 40px;
-      margin: 40px 200px 0px 140px;
-      background-color:#ea352d;
-      border:1px solid #ea352d;
-      color: #fff;
-      font-size: 14px;
-      cursor: pointer;
-      line-height: 48px;
-      }
+        height: 50px;
+        // width: 50%;
+        width: 100%;
+        // width: 315px;
+        margin-top: 40px;
+        margin: 40px 200px 0px 140px;
+        background-color:#ea352d;
+        border:1px solid #ea352d;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        line-height: 48px;
+          .main_box2_btn{
+            background-color:#ea352d;
+        border:1px solid #ea352d;
+          }
+        }
+    }
     }
   }

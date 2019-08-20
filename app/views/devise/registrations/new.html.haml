@@ -60,7 +60,7 @@
       -# = form_with url: items_path, method: :get, local: true do |f|
       -# = form_with model: @restaurant, method: :get, local: true do |f|
       -# = form_with model: @user, url: root_path, method: :get, local: true do |f|
-      = form_for(resource, as: resource_name, url: root_path(resource_name)) do |f|
+      = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
         .main_box02
           .nickname
             %span 必須
@@ -81,7 +81,7 @@
           .no_bot
             私はロボットではありません。
           .next_btn
-            = f.submit "次へ進む", class: "main_box2_btn"
+            = f.submit "次へ進む"
 
       .footer
         .footer__box

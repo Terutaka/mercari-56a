@@ -11,7 +11,7 @@ before_action :set_category
   
   def create
     @item = Item.new(create_params)
-    if @item.save
+    if @item.save!
       redirect_to action: 'new'
     else
       render :index
@@ -21,7 +21,7 @@ before_action :set_category
   private
 
   def create_params
-    params.require(:item).permit(:brand_id,:name,:explain,:state_id,:fee_side_id,:prefecture_id,:shipping_date_id,:price,:category_id,photos_attributes: [:img_list]).merge(user_id: 1)
+    params.require(:item).permit(:brand_id,:name,:explain,:state_id,:fee_side_id,:prefecture_id,:shipping_date_id,:price,:category_id,photos_attributes: [:img_list]).merge(saler_id: 1)
   end
 
   def set_category

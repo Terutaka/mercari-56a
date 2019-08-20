@@ -4,7 +4,7 @@ end
 
 crumb :mypage do
   link "マイページ", mypage_items_path
-  # parent :root
+  #  parent :root
 end
 
 crumb :profile do
@@ -12,6 +12,25 @@ crumb :profile do
   parent :mypage
 end
 
+crumb :personal do
+  link "本人情報の登録", personal_items_path
+  parent :mypage
+end
+
+crumb :card_tmp1 do
+  link "支払方法", card_tmp1_card_index_path
+  parent :mypage
+end
+
+crumb :card_tmp2 do
+  link "クレジットカード情報入力", card_tmp2_card_index_path
+  parent :card_tmp1
+end
+
+crumb :logout do
+  link "ログアウト", logout_items_path
+  parent :mypage
+end
 # crumb :projects do
 #   link "Projects", projects_path
 # end

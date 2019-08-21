@@ -10,5 +10,9 @@ class ItemsController < ApplicationController
   end
 
   def show
+    @items = Item.first
+    @brands = Brand.first
+    @prefectures = Prefecture.first
+    @categories = Category.first
   end
 end

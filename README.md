@@ -43,7 +43,7 @@
 
 ---
 
-## Categorys テーブル
+## Categories テーブル
 
 | Column | Type | Options | Desc |
 | :-- | :-- | :-- | :-- |

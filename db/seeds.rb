@@ -66,7 +66,6 @@ lady_goods.children.create([{name:"長財布"}, {name:"折財布"},{name:"コイ
 
 lady_watch = lady.children.create(name:"時計")
 lady_watch.children.create([{name:"腕時計（アナログ）"}, {name:"腕時計（デジタル）"},{name:"ラバーベルト"},{name:"レザーベルト"},{name:"金属ベルト"},{name:"その他"}])
-                            
 
 
 men = Category.create(name:"メンズ")
@@ -108,11 +107,10 @@ men_goods = men.children.create(name:"小物")
 men_goods.children.create([{name:"長財布"}, {name:"折財布"},{name:"コインケース/小銭入れ"},
                             {name:"名刺入れ/定期入れ"},{name:"キーケース"},{name:"キーホルダー"},{name:"ネクタイ"},{name:"手袋"},{name:"ハンカチ"},
                             {name:"ベルト"},{name:"マフラー"},{name:"ストール"},{name:"バンダナ"},{name:"サスペンダー"}])
-                            
+
 men_watch = men.children.create(name:"時計")
 men_watch.children.create([{name:"腕時計（アナログ)"}, {name:"腕時計（デジタル）"},{name:"ラバーベルト"},{name:"レザーベルト"},{name:"金属ベルト"},{name:"その他"}])
-                                                        
-                            
+
 men_swimwear = men.children.create(name:"水着")
 men_swimwear.children.create([{name:"一般水着"}, {name:"スポーツ用"},{name:"アクセサリー"},{name:"その他"}])
 

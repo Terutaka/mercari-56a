@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'card/new'
   get 'card/show'
-  devise_for :users
+
   root 'items#index'
 
   # 今後変更予定

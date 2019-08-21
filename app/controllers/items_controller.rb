@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
-before_action :set_category
+  before_action :set_category
+
   def index
 
   end
@@ -8,7 +9,7 @@ before_action :set_category
     @item = Item.new
     @item.photos.build
   end
-  
+
   def create
     @item = Item.new(create_params)
     if @item.save!
@@ -17,6 +18,7 @@ before_action :set_category
       render :index
     end
   end
+
 
   private
 

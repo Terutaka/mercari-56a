@@ -63,19 +63,19 @@
       = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
         .main_box02
           .nickname
-            %span 必須
+            .spans 必須
             = f.label :ニックネーム
             = f.text_field :nickname, autocomplete: "name", class: "login-nickname main_box2_left"
           .mail_adress
-            %span 必須
+            .spans 必須
             = f.label :メールアドレス
             = f.email_field :email, autocomplete: "new-password", class: "login-mail main_box2_left"
           .password_01
-            %span 必須
+            .spans 必須
             = f.label :パスワード（確認）
             = f.password_field :password, autocomplete: "password", class: "login-password main_box2_left"
           .password_02
-            %span 必須
+            .spans 必須
             = f.label :パスワード（確認）
             = f.password_field :password_confirmation, autocomplete: "new-password", class: "login-password main_box2_left"
           .no_bot

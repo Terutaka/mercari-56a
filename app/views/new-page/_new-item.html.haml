@@ -31,7 +31,9 @@
               .__category
                 %h4 カテゴリー
                 %span 必須
-                = f.collection_select :category_id, @parents,:id,:name,{prompt: "---"},class: "contents__item-about_box_condition_input",id: "parent-form"
+                .__category-wrap
+                  = f.collection_select :category_id, @parents,:id,:name,{prompt: "---"},class: "contents__item-about_box_condition_input",id: "parent-form"
+                  -# = f.hidden_field :category_id, value: 
               .__burand
                 %h4 ブランド
                 %span 任意
@@ -66,9 +68,11 @@
                 ._list_top__right
                   = f.text_field :price,placeholder:"例）300",id: "input_price"
               %li._list
-                %pre._list_text 販売手数料（10%）                                     -
+                ._list_text 販売手数料（10%
+                #fee -
               %li._list
-                %pre.h5#calculation 販売利益                                            -
+                .h5 販売利益
+                #calculation -
         .new_contents__submit
           %a<>禁止されている出品
           、

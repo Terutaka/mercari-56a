@@ -5,6 +5,9 @@ Rails.application.routes.draw do
 
   root 'items#index'
 
+
+  resources :items, only: [:show]
+
   # 今後変更予定
   resources :items do
     collection do

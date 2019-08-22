@@ -553,3 +553,4 @@ others_officeitem.children.create([{name:"オフィス用品一般"},{name:"オ�
 
 others_other = others.children.create(name:"その他")
 
+ggggg

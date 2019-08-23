@@ -67,8 +67,7 @@ $(document).on('turbolinks:load', function() {
     }
   })
   $(document).on("change","#grand-form",function(){
-    var grand = $(this).val();
-    console.log(grand);
-    
+    var cate_val = $(this).val();
+    $("#cate_id").val(cate_val);
   });
 });

@@ -41,8 +41,7 @@ $(document).on('turbolinks:load', function() {
     };
   });
   $(document).on("change",".contents__shipping_box_how_input",function(){
-    var grand = $(this).val();
-    console.log(grand);
-    
+    var fee_val = $(this).val();
+    $("#fee_id").val(fee_val);
   });
 });

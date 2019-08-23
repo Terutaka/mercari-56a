@@ -12,17 +12,15 @@ before_action :set_category
   def create
     @item = Item.new(create_params)
     if @item.save
-      redirect_to action: 'new'
-    else
       render :index
+    else
+      redirect_to action: 'new'
     end
   end
 
   def select
     if params[:parent_id]
       @children = Category.find(params[:parent_id]).children
-    # elsif params[:grand_id]
-    #   @dection = Category.find(params[:grand_id])
     elsif params[:fee_parent_id]
       @fee_parent = FeeSide.find(params[:fee_parent_id]).children
     else

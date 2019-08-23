@@ -9,7 +9,7 @@ $(document).on('turbolinks:load', function() {
 
   function grand_select(){
     var html = `<select name=child-select,class=contents__item-about_box_condition_input", id="grand-form">
-                  <option value="---">---</option>
+                  <option value="0">---</option>
                 </select>`
 
     return html;
@@ -23,50 +23,52 @@ $(document).on('turbolinks:load', function() {
 
   $("#parent-form").change(function(){
     var parents = $(this).val();
-    $.ajax({
-      url: '/items/select',
-      type: 'get',
-      dataType: 'json',
-      data: {parent_id: parents}
-    })
-    .done(function(select){
+    if (parents > 0){
+      $.ajax({
+        url: '/items/select',
+        type: 'get',
+        dataType: 'json',
+        data: {parent_id: parents}
+      })
+      .done(function(select){
+        $("#child-form,#grand-form").remove();
+        var html =  child_select();
+        $(".__category-wrap").append(html);
+        select.forEach(function(child){
+          var html = cate_value(child);
+          $("#child-form").append(html);
+        });
+      })
+    } else{
       $("#child-form,#grand-form").remove();
-      var html =  child_select();
-      $(".__category-wrap").append(html);
-      select.forEach(function(child){
-        var html = cate_value(child);
-        $("#child-form").append(html);
-      });
-    })
+    }
   });
 
   $(document).on("change","#child-form",function(){
     var children = $(this).val();
-    $.ajax({
-      url: '/items/select',
-      type: 'get',
-      dataType: 'json',
-      data: {child_id: children}
-    })
-    .done(function(select){
+    if (children > 0){
+      $.ajax({
+        url: '/items/select',
+        type: 'get',
+        dataType: 'json',
+        data: {child_id: children}
+      })
+      .done(function(select){
+        $("#grand-form").remove();
+        var html =  grand_select();
+        $(".__category-wrap").append(html);
+        select.forEach(function(grand){
+          var html = cate_value(grand);
+          $("#grand-form").append(html);
+        });
+      })
+    }else{
       $("#grand-form").remove();
-      var html =  grand_select();
-      $(".__category-wrap").append(html);
-      select.forEach(function(grand){
-        var html = cate_value(grand);
-        $("#grand-form").append(html);
-      });
-    })
+    }
   })
   $(document).on("change","#grand-form",function(){
     var grand = $(this).val();
-    $.ajax({
-      url: '/items/select',
-      type: 'get',
-      dataType: 'json',
-      data: {grand_id: grand}
-    })
-    .done(function(select){
-    });
+    console.log(grand);
+    
   });
 });

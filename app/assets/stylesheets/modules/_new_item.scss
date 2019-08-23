@@ -19,13 +19,17 @@
     color: #fff;
     font-size: 12px;
     background-color: #ea352d;
-	}
+  }
+  & h1{
+    text-align: center;
+    font-size: 23px;
+  }
   & h2{
 		text-align: center;
 	}
 	& h3{
 		display: inline-block;
-		font-size: 14px;
+    font-size: 16px;
 		float:left;
 	}
 	& h4{
@@ -120,17 +124,16 @@
 
 		.__about.clearfix{
       padding:40px;
-			height: 260px;
-			text-align: right;
+      height: 100%;
 			.__item-about{
 				._box{
 					width: 400px;
-					height: 200px;
+					height: 100%;
 					float: right;
 
 					.__category{
             flex-direction: column;
-            width: 500px;
+            width: 400px;
 						height: 80px;
 
 					}
@@ -154,14 +157,12 @@
 		}
     .__shipping_box{
       padding: 40px;
-      height: 300px;
+      height: 100%;
       widows: 100px;
       border-bottom: solid 1px #F5F5F5;
       border-top: solid 1px #F5F5F5;
       width: 400px;
       float: right;
-      // display: flex;
-      margin-right:50px;
 
       ._ship-from-region{
         margin-top: 40px;
@@ -267,6 +268,7 @@
       line-height: 30px;
       font-size: 16px;
       cursor: pointer;
+      border-radius: 8px;
 		}
 		&__back-btn{
       display: block;
@@ -277,6 +279,7 @@
 			color: #fff;
 			background-color: #aaa;
       text-decoration: none;
+      border-radius: 6px;
     }
 	}
 }

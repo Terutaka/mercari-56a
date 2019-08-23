@@ -5,7 +5,7 @@ User.create(nickname: 'aaaaa',last_name: 'aaa',first_name: 'bbb',last_name_kana:
 UserDetail.create(user_id: '1',postal_code: 'ad121212',city:'kakakak', address: 'lallala', building:'kakaka', phone_number: '0909199da')
 
 #fee_sideのancestoryデータ
-saler = FeeSide.create(name:"送料込み(出品者負担")
+saler = FeeSide.create(name:"送料込み(出品者負担)")
 
 saler.children.create([{name:"未定"},{name:"らくらくメルカリ便"},{name:"ゆうメール"},{name:"レターパック"},{name:"普通郵便(定形,定形外"},{name:"クロネコヤマト"},{name:"ゆうパック"},{name:"クリックポスト"},{name:"ゆうパケット"}])
 

@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 2019_08_22_072253) do
     t.string "state_id", null: false
     t.integer "fee_side_id", null: false
     t.integer "shipping_date_id", null: false
-    t.integer "brand_id", null: false
+    t.integer "brand_id"
     t.integer "price", null: false
     t.integer "prefecture_id", null: false
     t.integer "saler_id"

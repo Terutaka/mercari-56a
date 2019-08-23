@@ -5,7 +5,7 @@
   .new_contents
     = form_with model: @item,local: true  do  |f|
       .__title
-        %h2 商品の情報を入力
+        %h1 商品の情報を入力
         .__image
         .__item-drop
           %h4 出品画像
@@ -24,7 +24,7 @@
             %h4 商品の説明
             %span 必須
             = f.text_area :explain ,placeholder:"商品の説明（必須 1,000文字以内）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。",class: "_description__text"
-        .-about.clearfix
+        .__about.clearfix
           %h3 商品の詳細
           .__item-about
             ._box
@@ -33,7 +33,7 @@
                 %span 必須
                 .__category-wrap
                   = f.collection_select :category_id, @parents,:id,:name,{prompt: "---"},class: "contents__item-about_box_condition_input",id: "parent-form"
-                  -# = f.hidden_field :category_id, value: 
+                  -# = f.hidden_field :category_id, value: "",id: cate_id
               .__burand
                 %h4 ブランド
                 %span 任意
@@ -45,10 +45,11 @@
         .__shipping.clearfix
           %h3 配送について
           .__shipping_box
-            .__shipping_box_charge
-              %h4 配送料の負担
-              %span 必須
-              = f.select :fee_side_id,@fee_side,prompt: "---", class: "contents__shipping_box_charge_input"
+            .__shipping_box_ancestory
+              .__shipping_box_charge
+                %h4 配送料の負担
+                %span 必須
+                = f.collection_select :fee_side_id,@fee_side,:id,:name,{prompt: "---"}, class: "contents__shipping_box_charge_input",id: "fee_side_parent"
             .__shipping_box_ship-from-region
               %h4 発送元の地域
               %span 必須

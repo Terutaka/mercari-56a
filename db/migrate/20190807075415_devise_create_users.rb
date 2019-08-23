@@ -5,13 +5,13 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
     create_table :users do |t|
 
       # ユーザー新規作成時は以下のをコメントアウト解除してください
-      t.integer :user_detail_id, foreign_key: true,null: false
+      t.integer :user_detail_id
       t.string  :nickname,               null: false, unique: true, index: true
-      t.string  :last_name,              null: false
-      t.string  :first_name,              null: false
-      t.string  :last_name_kana,              null: false
-      t.string  :first_name_kana,              null: false
-      t.integer  :birthday, null: false
+      t.string  :last_name
+      t.string  :first_name
+      t.string  :last_name_kana
+      t.string  :first_name_kana
+      t.integer  :birthday
       t.text    :profile
 
       ## Database authenticatable

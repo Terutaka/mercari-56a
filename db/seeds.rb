@@ -1,9 +1,19 @@
 
+#仮置投入データ
+# User.create(nickname: 'aaaaa',last_name: 'aaa',first_name: 'bbb',last_name_kana: 'cccc', first_name_kana: 'dddd',birthday: '19990922',profile: 'oaaooaoao',email: 'hogehoge@hoge.com', password: 'hugahuga', user_detail_id: '1')
 
-User.create(:nickname => 'aaaaa',:last_name => 'aaa',:lfirst_name => 'bbb',:last_name_kana => 'cccc', :first_name_kana => 'dddd',:birthday => '19990922',:profile => 'oaaooaoao',:email => 'hogehoge@hoge.com', :password => 'hugahuga', :user_detail_id => '1')
+UserDetail.create(user_id: '1',postal_code: 'ad121212',city:'kakakak', address: 'lallala', building:'kakaka', phone_number: '0909199da')
 
-UserDetail.create(:user_id => '1',:postal_code => 'ad121212',:city =>'kakakak', :address => 'lallala', :building =>'kakaka', :phone_number => '0909199da')
+#fee_sideのancestoryデータ
+saler = FeeSide.create(name:"送料込み(出品者負担)")
 
+saler.children.create([{name:"未定"},{name:"らくらくメルカリ便"},{name:"ゆうメール"},{name:"レターパック"},{name:"普通郵便(定形,定形外"},{name:"クロネコヤマト"},{name:"ゆうパック"},{name:"クリックポスト"},{name:"ゆうパケット"}])
+
+buyer = FeeSide.create(name:"着払い(購入者負担)")
+
+buyer.children.create([{name:"未定"},{name:"クロネコヤマト"},{name:"ゆうパック"},{name:"ゆうメール"}])
+
+#catrgoryのancestoryデータ
 lady = Category.create(name:"レディース")
 
 lady_tops = lady.children.create(name:"トップス")
@@ -111,6 +121,7 @@ men_goods.children.create([{name:"長財布"}, {name:"折財布"},{name:"コイ�
 men_watch = men.children.create(name:"時計")
 men_watch.children.create([{name:"腕時計（アナログ)"}, {name:"腕時計（デジタル）"},{name:"ラバーベルト"},{name:"レザーベルト"},{name:"金属ベルト"},{name:"その他"}])
 
+
 men_swimwear = men.children.create(name:"水着")
 men_swimwear.children.create([{name:"一般水着"}, {name:"スポーツ用"},{name:"アクセサリー"},{name:"その他"}])
 
@@ -167,7 +178,7 @@ beauty_relaxation.children.create([{name:"エッセンシャルオイル"}, {nam
 beauty_diet = beauty.children.create(name:"ダイエット")
 beauty_diet.children.create([{name:"ダイエット食品"}, {name:"エクササイズ用品"},{name:"体重計"},
                                     {name:"体脂肪計"},{name:"その他"}])
-                                  
+
 beauty_other = beauty.children.create(name:"その他")
 beauty_other.children.create([{name:"健康用品"}, {name:"看護/介護用品"},{name:"救急/衛星用品"},
                                 {name:"その他"}])

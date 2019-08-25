@@ -29,4 +29,4 @@
 .idea/
 .vscode/
 /.env
-/public/uploads
+public/

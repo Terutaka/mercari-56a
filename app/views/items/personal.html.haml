@@ -2,6 +2,8 @@
   .mypage-content
     .t-box_headers
       = render 'top-page/header'
+    - breadcrumb :personal
+    = render "layouts/breadcrumbs"
     .mypage-box
       .m-box_left
         .senter-box

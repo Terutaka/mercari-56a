@@ -2,7 +2,7 @@
   .__s-lists
     .__s-list
       .__s-link
-        マイページ
+        = link_to "マイページ", mypage_items_path, class:'__s-to-link'
         = fa_icon 'chevron-right', class: 'icon'
     .__s-list
       .__s-link
@@ -18,7 +18,7 @@
         = fa_icon 'chevron-right', class: 'icon'
     .__s-list
       .__s-link
-        出品する
+        = link_to "出品する", exhibit_items_path, class:'__s-to-link'
         = fa_icon 'chevron-right', class: 'icon'
     .__s-list
       .__s-link
@@ -74,29 +74,29 @@
   .__s-list-box-low
     .__s-l-list
       .__s-link
-      プロフィール
-      = fa_icon 'chevron-right', class: 'icon'
+        = link_to "プロフィール", profile_items_path, class:'__s-to-link'
+        = fa_icon 'chevron-right', class: 'icon'
     .__s-l-list
       .__s-link
       発送元・お届け先住所
       = fa_icon 'chevron-right', class: 'icon'
     .__s-l-list
       .__s-link
-      支払い方法
-      = fa_icon 'chevron-right', class: 'icon'
+        = link_to "支払い方法", card_tmp1_card_index_path, class:'__s-to-link'
+        = fa_icon 'chevron-right', class: 'icon'
     .__s-l-list
       .__s-link
       メール/パスワード
       = fa_icon 'chevron-right', class: 'icon'
     .__s-l-list
       .__s-link
-      本人情報
-      = fa_icon 'chevron-right', class: 'icon'
+        = link_to "本人情報", personal_items_path, class:'__s-to-link'
+        = fa_icon 'chevron-right', class: 'icon'
     .__s-l-list
       .__s-link
       電話番号の確認
       = fa_icon 'chevron-right', class: 'icon'
     .__s-l-list
       .__s-link
-      ログアウト
-      = fa_icon 'chevron-right', class: 'icon'
+        = link_to "ログアウト", logout_items_path, class:'__s-to-link'
+        = fa_icon 'chevron-right', class: 'icon'

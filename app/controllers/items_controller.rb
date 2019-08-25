@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
-before_action :set_category
+  before_action :set_category
+
   def index
 
   end
@@ -27,6 +28,7 @@ before_action :set_category
       @grandchildren = Category.find(params[:child_id]).children
     end
   end
+
 
   private
 

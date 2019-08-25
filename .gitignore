@@ -29,3 +29,4 @@
 .idea/
 .vscode/
 /.env
+/public/

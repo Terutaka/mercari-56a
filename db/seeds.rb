@@ -1,5 +1,3 @@
-
-
 User.create(:nickname => 'aaaaa',:last_name => 'aaa',:lfirst_name => 'bbb',:last_name_kana => 'cccc', :first_name_kana => 'dddd',:birthday => '19990922',:profile => 'oaaooaoao',:email => 'hogehoge@hoge.com', :password => 'hugahuga', :user_detail_id => '1')
 
 UserDetail.create(:user_id => '1',:postal_code => 'ad121212',:city =>'kakakak', :address => 'lallala', :building =>'kakaka', :phone_number => '0909199da')
@@ -167,7 +165,7 @@ beauty_relaxation.children.create([{name:"エッセンシャルオイル"}, {nam
 beauty_diet = beauty.children.create(name:"ダイエット")
 beauty_diet.children.create([{name:"ダイエット食品"}, {name:"エクササイズ用品"},{name:"体重計"},
                                     {name:"体脂肪計"},{name:"その他"}])
-                                  
+
 beauty_other = beauty.children.create(name:"その他")
 beauty_other.children.create([{name:"健康用品"}, {name:"看護/介護用品"},{name:"救急/衛星用品"},
                                 {name:"その他"}])
@@ -553,3 +551,42 @@ others_officeitem.children.create([{name:"オフィス用品一般"},{name:"オ�
 
 others_other = others.children.create(name:"その他")
 
+
+# # This file should contain all the record creation needed to seed the database with its default values.
+# # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+# #
+# # Examples:
+# #
+# #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+# #   Character.create(name: 'Luke', movie: movies.first)
+# lady = Category.create(:name=>"レディース")
+
+# lady_tops = lady.children.create(:name=>"トップス")
+# lady_jacket = lady.children.create(:name=>"ジャケット/アウター")
+
+# lady_tops.children.create([{:name=>"Tシャツ/カットソー(半袖/袖なし)"}, {:name=>"Tシャツ/カットソー(七分/長袖)"},{:name=>"その他"}])
+# lady_jacket.children.create([{:name=>"テーラードジャケット"}, {:name=>"ノーカラージャケット"}, {:name=>"Gジャン/デニムジャケット"},{:name=>"その他"}])
+
+# require 'faker'
+
+# 10.times do |n|
+#   name = Faker::Name.name
+#   description = "test_description"
+#   condition = "非常に良い"
+#   shipping_method = "ゆうパック"
+#   shipping_charge = "送料込み"
+#   ship_from_region = "愛知県"
+#   shipping_date = "4〜7日以内に発送"
+#   price = Faker::Number.number(4)
+
+#   Item.create!(
+#     name: name,
+#     description: description,
+#     condition: condition,
+#     shipping_method: shipping_method,
+#     shipping_charge: shipping_charge,
+#     ship_from_region: ship_from_region,
+#     shipping_date: shipping_date,
+#     price: price
+#     )
+# end

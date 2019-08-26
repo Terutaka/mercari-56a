@@ -7,6 +7,7 @@ set :rbenv_ruby, '2.5.1'
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
 set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
 set :keep_releases, 5
+
 after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
   task :restart do
@@ -25,6 +26,16 @@ set :default_env, {
   PAYJP_KEY: ENV["PAYJP_KEY"]
 }
 set :linked_files, fetch(:linked_files, []).push("config/master.key")
+
+# namespace :deploy do
+#   desc "reload the database with seed data"
+#   task :seed do
+#     run "cd /var/www/mercari-56a/current; rake db:seed RAILS_ENV=production"
+#   end
+# end
+
+
+# rake db:seed RAILS_ENV=production
 
 # set :rails_env, "production"
 # set :unicorn_rack_env, "production"

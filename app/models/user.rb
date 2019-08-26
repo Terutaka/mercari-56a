@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_one :user_detail
-  has_many :items
+  has_many :buying_items, class_name: "Item", foreign_key: "buyer_id"
   has_one :card
   has_one :user_detail
   accepts_nested_attributes_for :user_detail

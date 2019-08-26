@@ -1,29 +1,32 @@
 .main
   .t-box_headers
     = render 'top-page/header'
+  - breadcrumb :card_tmp1
+  = render "layouts/breadcrumbs"
   .head2
-  .senter-box
-    .left-content
-      = render 'profile-page/left'
-    .right-content-pay
-      .s-field__title 支払い方法
-      .srp-content
-        .srp-title クレジットカード一覧
-        .scp-card
-          .scp-card-list
-            .scp-campany
-              = image_tag "visa.svg",size: '49x20'
-            .scp-number ************8413
-            .scp-expire 03/22
-            %button.scp-delete 削除する
+  .main-big-box
+    .senter-box
+      .left-content
+        = render 'profile-page/left'
+      .right-content-pay
+        .s-field__title 支払い方法
+        .srp-content
+          .srp-title クレジットカード一覧
+          .scp-card
+            .scp-card-list
+              -# .scp-campany
+              -#   = image_tag "visa.svg",size: '49x20'
+              -# .scp-number ************8413
+              -# .scp-expire 03/22
+              -# %button.scp-delete 削除する
 
-          -# %a.scp-card-add{href: "1"}
-          -#   = fa_icon "credit-card"
-          -#   クレジットカードを追加する
+            %a.scp-card-add{href: "/card/card_tmp2"}
+              = fa_icon "credit-card"
+              クレジットカードを追加する
 
-        .scp-links
-          = link_to "支払い方法について","1",class: "scp-link"
-          = fa_icon "chevron-right"
+          .scp-links
+            = link_to "支払い方法について","1",class: "scp-link"
+            = fa_icon "chevron-right"
 
-  .t-box_footers
-    = render 'top-page/footer'
+    .t-box_footers
+      = render 'top-page/footer'

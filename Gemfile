@@ -19,6 +19,7 @@ group :development, :test do
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano3-unicorn'
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -63,3 +64,8 @@ gem 'ancestry'
 gem 'devise'
 gem 'payjp'
 gem 'rack-dev-mark'
+
+# ==================== Add gem lists4 ====================
+
+# gem 'rspec-rails'
+gem "gretel"

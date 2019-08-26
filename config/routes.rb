@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   devise_for :users
   get 'card/new'
   get 'card/show'
-  devise_for :users
   # resources :users do
   #   collection do
   #     get "new1"

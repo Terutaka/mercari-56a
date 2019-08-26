@@ -2,6 +2,13 @@ Rails.application.routes.draw do
   get 'card/new'
   get 'card/show'
   devise_for :users
+  # resources :users do
+  #   collection do
+  #     get "new1"
+  #   end
+  # end
+
+
   root 'items#index'
 
   # 今後変更予定

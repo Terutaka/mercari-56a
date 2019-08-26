@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'card/new'
   get 'card/show'
-  devise_for :users
+
   root 'items#index'
 
   # 今後変更予定
@@ -19,8 +20,12 @@ Rails.application.routes.draw do
       get "mem_create3"
       get "mem_create4"
       get "mem_create5"
-      get "show"
+      # get "show"
       get "logout"
+      get "select",default: {format: 'json'}
+      # post "show"
+      # get "logout"
+      # post "new"
     end
   end
 

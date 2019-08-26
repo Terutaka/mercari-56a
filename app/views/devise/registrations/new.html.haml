@@ -1,21 +1,93 @@
-%h2 Sign up
-= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-  = render "devise/shared/error_messages", resource: resource
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true, autocomplete: "email"
-  .field
-    = f.label :password
-    - if @minimum_password_length
-      %em
-        (#{@minimum_password_length} characters minimum)
-    %br/
-    = f.password_field :password, autocomplete: "new-password"
-  .field
-    = f.label :password_confirmation
-    %br/
-    = f.password_field :password_confirmation, autocomplete: "new-password"
-  .actions
-    = f.submit "Sign up"
-= render "devise/shared/links"
+-# %h2 Sign up
+-# = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+-#   = render "devise/shared/error_messages", resource: resource
+-#   .field
+-#     = f.label :nickname
+-#     %br/
+-#     = f.text_field :nickname, autofocus: true, autocomplete: "nickname"
+-#   .field
+-#     = f.label :email
+-#     %br/
+-#     = f.email_field :email, autofocus: true, autocomplete: "email"
+-#   .field
+-#     = f.label :password
+-#     - if @minimum_password_length
+-#       %em
+-#         (#{@minimum_password_length} characters minimum)
+-#     %br/
+-#     = f.password_field :password, autocomplete: "new-password"
+-#   .field
+-#     = f.label :password_confirmation
+-#     %br/
+-#     = f.password_field :password_confirmation, autocomplete: "new-password"
+-#   .actions
+-#     = f.submit "Sign up"
+-# = render "devise/shared/links"
+
+
+.kaiin_page
+  .kaiin_logo
+    = link_to image_tag('logo.jpg', size: '200x60'), root_path
+  .progress_var
+    %nav.progress
+      %ul.progress-bar
+        %li.through1#through1
+          会員情報
+          .progress-status
+          .progress-status_bar
+        %li.active#active
+          電話番号認証
+          .progress-status
+          .progress-status_bar
+        %li.address#address
+          お届け先住所入力
+          .progress-status
+          .progress-status_bar
+        %li.payment#payment
+          支払い方法
+          .progress-status
+          .progress-status_bar
+        %li.end#end
+          完了
+          .progress-status
+          .progress-status_bar
+
+
+
+  .nyuryoku_boxes
+    .lead_box01
+      会員情報入力
+      -# = form_with url: items_path, method: :get, local: true do |f|
+      -# = form_with model: @restaurant, method: :get, local: true do |f|
+      -# = form_with model: @user, url: root_path, method: :get, local: true do |f|
+      = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+        .main_box02
+          .nickname
+            .spans 必須
+            = f.label :ニックネーム
+            = f.text_field :nickname, autocomplete: "name", class: "login-nickname main_box2_left"
+          .mail_adress
+            .spans 必須
+            = f.label :メールアドレス
+            = f.email_field :email, autocomplete: "new-password", class: "login-mail main_box2_left"
+          .password_01
+            .spans 必須
+            = f.label :パスワード（確認）
+            = f.password_field :password, autocomplete: "password", class: "login-password main_box2_left"
+          .password_02
+            .spans 必須
+            = f.label :パスワード（確認）
+            = f.password_field :password_confirmation, autocomplete: "new-password", class: "login-password main_box2_left"
+          .no_bot
+            私はロボットではありません。
+          .next_btn
+            = f.submit "次へ進む"
+
+      .footer
+        .footer__box
+          %ul
+            %li
+              プライバシーポリシー &nbsp;&nbsp;  メルカリ利用規約 &nbsp;&nbsp; 特定商取引に関する表記
+            %li
+              = image_tag 'gray-logo.jpg', size: '90x80'
+            %li ©︎2019 Mercari

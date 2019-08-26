@@ -28,7 +28,19 @@
     flex-direction: column;
     align-items: center;
   }
-    span {
+
+  //   span {
+  //     margin: 5px;
+  //     padding: 2px 4px;
+  //     border-radius: 2px;
+  //     color: #fff;
+  //     font-size: 12px;
+  //     background-color: #ea352d;
+  //     display: inline-block;
+  // }
+
+  // この span はパンくずに影響しているのでとりあえずコメントアウトしています。
+    .spans{
       margin: 5px;
       padding: 2px 4px;
       border-radius: 2px;
@@ -36,7 +48,7 @@
       font-size: 12px;
       background-color: #ea352d;
       display: inline-block;
-  }
+    }
     input{
       display: flex;
       flex-direction: column;

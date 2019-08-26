@@ -8,18 +8,40 @@
           = fa_icon "search", class: "tbh-form__search__btn"
 
   .tbh-filed_all
-    .tbh-filed__select
-      %ul.tbh-st__group
-        %li
-          %i.fa.fa-list-ul{"aria-hidden" => "true",class: "tbh-icon"}
-          %a.tbh-st-list_btn カテゴリーから探す
-        %li
-          %i.fa.fa-tag{"aria-hidden" => "true",class: "tbh-icon"}
-          %a.tbh-st-list_btn ブランドから探す
+    - if user_signed_in?
+      .tbh-filed__select
+        %ul.tbh-st__group
+          %li
+            %i.fa.fa-list-ul{"aria-hidden" => "true",class: "tbh-icon"}
+            %a.tbh-st-list_btn カテゴリーから探す
+          %li
+            %i.fa.fa-tag{"aria-hidden" => "true",class: "tbh-icon"}
+            %a.tbh-st-list_btn ブランドから探す
 
-    .tbh-filed__userbox
-      %ul.tbh-ub__group
-        %li
-          %a.tbh-st-signup 新規会員登録
-        %li
-          %a.tbh-st-login ログイン
+      .tbh-filed__userbox
+        %ul.tbh-ub__group
+          %li
+            = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "tbh-st-signup"
+    - else
+      .tbh-filed__select
+        %ul.tbh-st__group
+          %li
+            %i.fa.fa-list-ul{"aria-hidden" => "true",class: "tbh-icon"}
+            %a.tbh-st-list_btn カテゴリーから探す
+          %li
+            %i.fa.fa-tag{"aria-hidden" => "true",class: "tbh-icon"}
+            %a.tbh-st-list_btn ブランドから探す
+
+      .tbh-filed__userbox
+        %ul.tbh-ub__group
+          %li
+            = link_to "新規会員登録 ", new_user_items_path, class: "#a tbh-st-signup"
+          %li
+            = link_to "ログイン", login_items_path, class: "tbh-st-login"
+
+  -# .tbh-filed__userbox
+  -#   %ul.tbh-ub__group
+  -#     %li
+  -#       %a.tbh-st-signup 新規会員登録
+  -#     %li
+  -#       = link_to "ログイン", mypage_items_path,class: 'tbh-st-login'

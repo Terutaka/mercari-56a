@@ -3,10 +3,25 @@
   width:100%;
   background-color:  #f4f4f4;
 }
+.mypage-head{
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #eee;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.16);
+  background-color: white;
+  box-sizing: border-box;
+}
+  .mypage-head-inner{
+    width: 1020px;
+    height: 16px;
+    margin: 0 auto;
+    padding: 5px 0;
+    font-size: 14px;
+  }
 .mypage-box{
   width: 1020px;
   height: 1292px;
-  margin: 40px auto;
+  margin: 40px auto 0px;
   display: flex;
 }
 .m-box_left{

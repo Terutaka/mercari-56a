@@ -24,7 +24,8 @@ class ItemsController < ApplicationController
   def create
     @item = Item.new(create_params)
     if @item.save
-      render :index
+      # render :index
+      redirect_to root_path
     else
       redirect_to action: 'new'
     end

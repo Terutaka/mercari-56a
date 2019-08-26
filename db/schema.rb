@@ -65,7 +65,6 @@ ActiveRecord::Schema.define(version: 2019_08_22_072253) do
     t.integer "item_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "item_id"
   end
 
   create_table "user_details", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

@@ -6,6 +6,8 @@ class ItemsController < ApplicationController
     @items = Item.first
     # @photos = Photo.includes(:item)
     @photos = Photo.all
+    @oreos = Item.all
+    @oreophotos = Photo.all
     # @oreos = @photos.@nanasi.all
     # @oreos = Item.all.includes(:photos)
   end

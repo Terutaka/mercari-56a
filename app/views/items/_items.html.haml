@@ -3,8 +3,7 @@
     %a{:href => "https://www.google.com",class: "tbm-c__link"}
       %figure.tbm-c__link_figure
         - @oreophotos.each_with_index do |list,i|
-          -# = image_tag(list.img_list.url, size: '230x255', class: "tbm-c-image")
-          = "#{i}番目"
+          = image_tag(list.img_list.url, size: '230x255', class: "tbm-c-image")
       .tbm-c__text
         .tbm-c__name
           = r.name

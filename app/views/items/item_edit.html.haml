@@ -1,0 +1,44 @@
+.box
+  .mypage-content
+    .t-box_headers
+      = render 'top-page/header'
+    - breadcrumb :mypage
+    = render "layouts/breadcrumbs"
+    
+    .mypage-box
+      .m-box_left
+        .senter-box
+          = render 'profile-page/left'
+          .lead
+            .head
+              出品した商品
+            .tab
+              .tab01
+                出品中
+              .tab02
+                取引中
+              .tab03
+                売却済み
+            .item_lists
+              .item_img
+                %img.lazyloaded{:alt => "", "data-src" => "//static.mercdn.net/thumb/photos/m12924546987_1.jpg?1560917317", :src => "//static.mercdn.net/thumb/photos/m12924546987_1.jpg?1560917317"}/
+              .items_name_list
+                .item_name
+                  出品商品
+                .item_icons
+                  .heart
+                    .fa.fa-heart-o{"aria-hidden" => "true",class: "tbh-icon"}
+                    4
+                  .comment
+                    .fa.fa-comment-o{"aria-hidden" => "true",class: "tbh-icon"}
+                    1
+                  .shuppin
+                    %p 出品中
+            .b-box
+              .left
+                .fa.fa-chevron-left
+              .right
+                .fa.fa-chevron-right
+    .t-box_footers
+      = render 'top-page/footer'
+

@@ -1,0 +1,127 @@
+        .lead{
+          float: right;
+          background-color:white;
+          margin: 0px 0px 20px 0px;
+          height: 220px;
+          width:900px;
+          font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
+          .head{
+            width: 680px;
+            padding: 20px;
+            background-color:#fafafa;
+            font-weight: bold;
+          }
+        }
+          .tab {
+            display: flex;
+            width: 100%;
+            text-align: center;
+            justify-content: space-between;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            cursor: hand;
+            .tab01{
+              width: 100%;
+              display: flex;
+              position: relative;
+              display: block;
+              color: #333;
+              font-size: 16px;
+              line-height: 72px;
+              border-top: 2px solid #ea352d;
+            }
+            .tab02{
+              width: 100%;
+              display: flex;
+              background-color: #dddddd;
+              position: relative;
+              display: block;
+              color: #333;
+              font-size: 16px;
+              line-height: 72px;
+            }
+            .tab03{
+              width:  100%;
+              display: flex;
+              background-color: #dddddd;
+              position: relative;
+              display: block;
+              color: #333;
+              font-size: 16px;
+              line-height: 72px;
+            }
+        }
+          .item_lists{
+            padding: 16px;
+            font-size: 14px;
+            display: flex;
+            flex-wrap:wrap;
+            .lazyloaded{
+              height: 48px;
+              width: 48px;
+              display: flex;
+              cursor: pointer;
+              cursor: hand;
+            }
+            .item_name{
+              height: 20px;
+              width: 100%;
+              margin-left: 15px;
+              cursor: pointer;
+              cursor: hand;
+            }
+          }
+            .item_icons{
+              display: flex;
+              margin-left: 15px;
+              margin-top: 10px;
+              color:#cccc;
+            }
+              .comment{
+                margin-left: 5px;
+              }
+              .shuppin{
+                background: #0099e8;
+                text-align: center;
+                line-height:10px;
+                width: 37px;
+                height: 10px;
+                padding: 7px 8px;
+                border-radius: 2px;
+                font-size: 12px;
+                color: #fff;
+                margin-left: 5px;
+                font-weight: bold;
+              }
+            .b-box{
+              justify-content: space-between;
+              display: flex;
+              margin: 40px 0 0;
+              .left {
+                display: inline-block;
+                width: 44px;
+                height: 44px;
+                border-radius: 4px;
+                background: #fff;
+                border: 1px solid #ccc;
+                font-size: 14px;
+                line-height: 42px;
+                text-align: center;
+                cursor: pointer;
+                cursor: hand;
+              }
+              .right {
+                display: inline-block;
+                width: 44px;
+                height: 44px;
+                border-radius: 4px;
+                background: #fff;
+                border: 1px solid #ccc;
+                font-size: 14px;
+                line-height: 42px;
+                text-align: center;
+                cursor: pointer;
+                cursor: hand;
+              }
+            }

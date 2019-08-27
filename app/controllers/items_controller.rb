@@ -19,7 +19,23 @@ class ItemsController < ApplicationController
     end
   end
 
+  def edit
+  end
 
+  def show
+  end
+
+  def destroy
+    if @item.destroy
+      redirect_to action: "index"
+    else
+      flash[:notice] = "削除に失敗しました"
+    end
+  end
+
+  def set_item
+    @item = Item.find(params[:id])
+  end
   private
 
   def create_params

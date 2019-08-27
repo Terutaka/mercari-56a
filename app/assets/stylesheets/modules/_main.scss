@@ -2,6 +2,8 @@
   width: 100%;
   .tbm-all__group{
     width: 100%;
+    display: inline-block;
+    margin-bottom: 50px;
     .tbm-filed__image{
       height: 390px;
       background-position: center center;
@@ -32,7 +34,7 @@
       }
       .tbm-group__containers{
         display: flex;
-        width:500px;
+        width:1000px;
         .tbm-c__item{
           margin-left: 20px;
 					width: 200px;
@@ -94,17 +96,31 @@
               .tbm-c__good{
                 color: #333;
                 font-weight: 400;
+                display: flex;
+                .fa.fa-heart-o{
+                  margin-top: 4px;
+                }
                 .tbm-c__good_count{
                   font-weight: 400;
-									color: #333;
-                }
+                  color: #333;
+                  display: flex;
+                  margin: 0px 0px 10px 5px;
+                  }
+							// 		color: #333;
+              //   }
+              // }
+              // .tbm-c__text_tax{
+              //   font-size: 10px;
+              //   color: #333;
+              //   position: absolute;
+              //   bottom: 10px;
               }
-              .tbm-c__text_tax{
-                font-size: 10px;
-                color: #333;
-                position: absolute;
-                bottom: 10px;
-              }
+                  p.tbm-c__text_tax{
+                    font-size: 10px;
+                    color: #333;
+                    bottom: 10px;
+                    margin-top: 10px;
+                    }
             }
           }
         }

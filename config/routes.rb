@@ -22,9 +22,12 @@ Rails.application.routes.draw do
       get "mem_create3"
       get "mem_create4"
       get "mem_create5"
-      # post "show"
+      # get "show"
       get "logout"
-      post "new"
+      get "select",default: {format: 'json'}
+      # post "show"
+      # get "logout"
+      # post "new"
     end
   end
 

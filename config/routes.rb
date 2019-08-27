@@ -14,6 +14,8 @@ Rails.application.routes.draw do
       get "buy"
       get "profile"
       get "mypage"
+      get "item_edit"
+      get "editing_screen"
       get "personal"
       get "exhibit"
       get "new_user"

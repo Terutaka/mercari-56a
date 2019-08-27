@@ -1,0 +1,24 @@
+.box
+  .mypage-content
+    .t-box_headers
+      = render 'top-page/header'
+    - breadcrumb :mypage
+    = render "layouts/breadcrumbs"
+
+  .editing
+    = render 'show-page/main'
+
+  .item_edit
+    .editing_btn
+      商品の編集
+    .or
+      or
+    .item_stops
+      出品を一旦停止する
+    .item_delete
+      この商品を削除する
+
+
+
+  .t-box_footers
+    = render 'top-page/footer'

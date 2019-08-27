@@ -10,22 +10,43 @@
 
   .tbm-filed__content
     .tbm-group__title
-      レディース新着アイテム
+      レディース新着イテム
 
     .tbm-group__containers
       = render partial: 'items/items'
+      -# - @oreos.each do |r|
+      -#   %section.tbm-c__item
+      -#     %a{:href => "https://www.google.com",class: "tbm-c__link"}
+      -#       %figure.tbm-c__link_figure
+      -#         -# - @photos.each do |list|
+      -#         -#   = image_tag(list.img_list, size: '230x255', class: "tbm-c-image")
+      -#         -# = image_tag item.photos[0].img.url , width: "100%", height: "100%"
+
+      -#         - @oreophotos.each do |list|
+      -#           = image_tag(list.img_list.url, size: '230x255', class: "tbm-c-image")
+      -#       .tbm-c__text
+      -#         .tbm-c__name
+      -#           = r.name
+      -#         .tbm-c__box
+      -#           .tbm-c__price
+      -#             ¥
+      -#             = r.price
+      -#           .tbm-c__good
+      -#             = fa_icon "heart-o", class: ".tbm-c__good_btn"
+      -#             .tbm-c__good_count
+      -#             = r.likes_count
 
     .tbm-group__more
       %a.tbm-more__link
         すべての商品を見る
 
-  .tbm-filed__content
-    .tbm-group__title
-      メンズ新着アイテム
+  -# .tbm-filed__content
+  -#   .tbm-group__title
+  -#     メンズ新着アイテム
 
-    .tbm-group__containers
-      = render partial: 'items/items'
+  -#   .tbm-group__containers
+  -#     = render partial: 'items/items'
 
-    .tbm-group__more
-      %a.tbm-more__link
-        すべての商品を見る
+    -# .tbm-group__more
+    -#   %a.tbm-more__link
+    -#     すべての商品を見る

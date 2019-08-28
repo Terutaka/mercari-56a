@@ -1,18 +1,32 @@
 class ItemsController < ApplicationController
   before_action :set_category
 
+  # def index
+  #   @items = Item.all
+  #   @photos = Photo.all
+  # end
+
   def index
+    # @items = Item.order("created_at DESC").limit(4)
     @items = Item.all
+    # @photos = Photo.includes(:item)
     @photos = Photo.all
+    # @oreos = Item.all
+    # @oreophotos = Photo.all
+    # @oreos = @photos.@nanasi.all
+    # @oreos = Item.all.includes(:photos)
   end
 
   def show
-    @items = Item.all
+    @items = Item.first
+    @brands = Brand.first
+    @prefectures = Prefecture.first
+    @categories = Category.first
   end
 
   def new
-    @items = Item.new
-    @items.photos.build
+    @item = Item.new
+    @item.photos.build
   end
 
   def create
@@ -36,7 +50,6 @@ class ItemsController < ApplicationController
 
   def edit
   end
-
 
   def destroy
     if @item.destroy

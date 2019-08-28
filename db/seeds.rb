@@ -7,13 +7,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-# lady = Category.create(:name=>"レディース")
 
-# lady_tops = lady.children.create(:name=>"トップス")
-# lady_jacket = lady.children.create(:name=>"ジャケット/アウター")
+# ===============ここから===============
+# # lady = Category.create(:name=>"レディース")
 
-# lady_tops.children.create([{:name=>"Tシャツ/カットソー(半袖/袖なし)"}, {:name=>"Tシャツ/カットソー(七分/長袖)"},{:name=>"その他"}])
-# lady_jacket.children.create([{:name=>"テーラードジャケット"}, {:name=>"ノーカラージャケット"}, {:name=>"Gジャン/デニムジャケット"},{:name=>"その他"}])
+# # lady_tops = lady.children.create(:name=>"トップス")
+# # lady_jacket = lady.children.create(:name=>"ジャケット/アウター")
+
+# # lady_tops.children.create([{:name=>"Tシャツ/カットソー(半袖/袖なし)"}, {:name=>"Tシャツ/カットソー(七分/長袖)"},{:name=>"その他"}])
+# # lady_jacket.children.create([{:name=>"テーラードジャケット"}, {:name=>"ノーカラージャケット"}, {:name=>"Gジャン/デニムジャケット"},{:name=>"その他"}])
+# ===============ここまで===============
 
 # require 'faker'
 
@@ -604,6 +607,6 @@ others_stationery.children.create([{name:"筆記具"},{name:"ノート/メモ帳
 others_officeitem = others.children.create(name:"事務/店舗用品")
 others_officeitem.children.create([{name:"オフィス用品一般"},{name:"オフィス家具"},{name:"店舗用品"},{name:"OA機器"},{name:"ラッピング/包装"},{name:"その他"}])
 
-others_other = others.children.create(name:"その他")
 
+others_other = others.children.create(name:"その他")
 

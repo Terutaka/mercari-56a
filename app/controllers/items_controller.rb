@@ -7,15 +7,16 @@ class ItemsController < ApplicationController
   end
 
   def show
+    @items = Item.all
   end
 
   def new
-    @item = Item.new
-    @item.photos.build
+    @items = Item.new
+    @items.photos.build
   end
 
   def create
-    @item = Item.new(create_params)
+    @items = Item.new(create_params)
     if @item.save
       redirect_to root_path
     else
@@ -36,8 +37,6 @@ class ItemsController < ApplicationController
   def edit
   end
 
-  def show
-  end
 
   def destroy
     if @item.destroy

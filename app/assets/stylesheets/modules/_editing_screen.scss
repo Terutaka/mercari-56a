@@ -202,6 +202,7 @@
       line-height: 48px;
       font-size: 14px;
     }
+    // 削除ボタン
     .item_delete{
       cursor: pointer;
       cursor: hand;
@@ -212,4 +213,8 @@
       width: 100%;
       line-height: 48px;
       font-size: 14px;
+      a {
+        text-decoration: none ;
+        color:white;
+      }
     }

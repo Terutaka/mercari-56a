@@ -19,7 +19,7 @@
 
   - @items.each do |r|
     %section.tbm-c__item
-      %a{:href => "https://www.google.com",class: "tbm-c__link"}
+      %a{:href => "items/editing_screen",class: "tbm-c__link"}
         %figure.tbm-c__link_figure
           - @photos.each_with_index do |list,i|
             = image_tag(list.img_list.url, size: '230x255', class: "tbm-c-image")

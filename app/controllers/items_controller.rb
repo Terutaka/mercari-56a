@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :set_category
+  before_action :set_category, :set_item
 
   # def index
   #   @items = Item.all
@@ -18,10 +18,10 @@ class ItemsController < ApplicationController
   end
 
   def show
-    @items = Item.first
-    @brands = Brand.first
-    @prefectures = Prefecture.first
-    @categories = Category.first
+    @items = Item.all
+    @items = Item.find(params[:id])
+    @categories = Category.all
+
   end
 
   def new
@@ -30,7 +30,7 @@ class ItemsController < ApplicationController
   end
 
   def create
-    @items = Item.new(create_params)
+    @item = Item.new(create_params)
     if @item.save
       redirect_to root_path
     else
@@ -74,6 +74,10 @@ class ItemsController < ApplicationController
   def set_category
     @parents = Category.all.order("id ASC").where(ancestry: nil)
     @fee_side = FeeSide.all.order("id ASC").where(ancestry: nil)
+  end
+
+  def set_item
+    @items = Item.last
   end
 
 end

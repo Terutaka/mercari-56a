@@ -1,14 +1,14 @@
 .tbsm-all__group
-  -# .t-box_headers
-  -#   = render 'top-page/header'
+  .t-box_headers
+    -# = render 'top-page/header'
   .tbsm-item__content
     .tbsm-filed__header
       = @items.name
     .tbsm-filed__show
       .tbsm-left-group
         %section.tbsml-top_image
-          -# - @item.photos do |oreo|
-            = image_tag 'oreo.img_list.url', size: '230x255', class: "tbm-c-image"
+          -# - @items.photos.each do |oreo|
+            -# = image_tag "#{photos.img_list.url}", size: '230x255', class: "tbm-c-image"
 
         %section.tbsml-bottom_image
           .show-photos_all
@@ -18,27 +18,27 @@
             .tbsmr-item
               出品者
             .tbsmr-value.tbsmr-color
-              情報さとこ
+              -# = @users.nickname
           %section.tbsm-group_box
             .tbsmr-item-large
               カテゴリー
             .tbsmr-value-large.tbsmr-color
-              -# = @categories.name
+              = @items.category_id
               %p
                 >
-                -# = @categories.ancestry
+                -# = @categori1es.ancestry
               %p
-                > ショートパンツ
+                >
           %section.tbsm-group_box
             .tbsmr-item
               ブランド
             .tbsmr-value.tbsmr-color
-              -# = @brands.name
+              = @items.brand_id
           %section.tbsm-group_box
             .tbsmr-item
               商品の状態
             .tbsmr-value
-              -# = @items.state
+              = @items.state_id
           %section.tbsm-group_box
             .tbsmr-item
               配送料の負担
@@ -53,31 +53,31 @@
             .tbsmr-item
               配送元地域
             .tbsmr-value.tbsmr-color
-              -# = @prefectures.name
+              = @items.prefecture_id
           %section.tbsm-group_box
             .tbsmr-item
               発送日の目安
             .tbsmr-value
-              -# =@items.shipping_date
+              =@items.shipping_date_id
               日以内で発送
 
     .tbsm-filed__footer
       .tbsm-filed__money
         .tbsm-price-box
           ￥
-          -# = @items.price
+          = @items.price
         .tbsm-tax-box
           (税込み) 送料込み
       .tbsm-filed__btn
         購入画面に進む
       .tbsm-filed__desc
-        -# = @items.explain
+        = @items.explain
       .tbsm-filed__like
         .tbsm-like-left-box
           .tbsm-like_box
             .fa.fa-heart{"aria-hidden" => "true",class: "tbh-icon"}
             いいね
-            -# =@items.likes_count
+            =@items.likes_count
           .tbsm-not_box
             .fa.fa-flag{"aria-hidden" => "true",class: "tbh-icon"}
             不適切な商品の報告

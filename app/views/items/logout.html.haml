@@ -2,8 +2,11 @@
   .logout-box
     .t-box_headers
       = render 'top-page/header'
+    - breadcrumb :logout
+    = render "layouts/breadcrumbs"
     .p-box_main
       .head2
+
       .main
         .senter-box
           = render 'profile-page/left'
@@ -11,6 +14,6 @@
             .__p-logout
               .__logout-submit
                 .__logout-btn
-                  = link_to "ログアウト", root_path,class: "logout_btn-text"
+                  = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "logout_btn-text"
     .t-box_footers
       = render 'top-page/footer'

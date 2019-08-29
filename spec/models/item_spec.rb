@@ -1,6 +1,11 @@
 require 'rails_helper'
 RSpec.describe Item, type: :model do
   describe Item do
+    describe '#index' do
+      # #     it "アイテム一覧が表示される" do
+      # #       item = build(:item)
+      # #     end
+      # #   end
     before do
       @item = FactoryBot.create(:item)
     end

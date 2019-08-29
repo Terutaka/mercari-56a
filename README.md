@@ -39,11 +39,11 @@
 
 ### Association
 
-- belong_to :item
+- belongs_to :item
 
 ---
 
-## Categorys テーブル
+## Categories テーブル
 
 | Column | Type | Options | Desc |
 | :-- | :-- | :-- | :-- |

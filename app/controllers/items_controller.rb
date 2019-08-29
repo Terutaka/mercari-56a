@@ -1,7 +1,27 @@
 class ItemsController < ApplicationController
-before_action :set_category
-  def index
+  before_action :set_category
 
+  # def index
+  #   @items = Item.all
+  #   @photos = Photo.all
+  # end
+
+  def index
+    # @items = Item.order("created_at DESC").limit(4)
+    @items = Item.all
+    # @photos = Photo.includes(:item)
+    @photos = Photo.all
+    # @oreos = Item.all
+    # @oreophotos = Photo.all
+    # @oreos = @photos.@nanasi.all
+    # @oreos = Item.all.includes(:photos)
+  end
+
+  def show
+    @items = Item.first
+    @brands = Brand.first
+    @prefectures = Prefecture.first
+    @categories = Category.first
   end
 
   def new
@@ -12,7 +32,7 @@ before_action :set_category
   def create
     @item = Item.new(create_params)
     if @item.save
-      render :index
+      redirect_to root_path
     else
       @item.photos.new
       # redirect_to action: "new"
@@ -30,6 +50,20 @@ before_action :set_category
     end
   end
 
+  def edit
+  end
+
+  def destroy
+    if @item.destroy
+      redirect_to action: "index"
+    else
+      flash[:notice] = "削除に失敗しました"
+    end
+  end
+
+  def set_item
+    @item = Item.find(params[:id])
+  end
   private
 
   def create_params

@@ -26,7 +26,7 @@ class ItemsController < ApplicationController
 
   def new
     @item = Item.new
-    @item.photos.build
+    @item.photos.new
   end
 
   def create
@@ -34,7 +34,9 @@ class ItemsController < ApplicationController
     if @item.save
       redirect_to root_path
     else
-      redirect_to action: 'new'
+      @item.photos.new
+      # redirect_to action: "new"
+      render :new
     end
   end
 

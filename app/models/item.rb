@@ -8,4 +8,15 @@ class Item < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to_active_hash :prefecture
   belongs_to_active_hash :brand , optional: true
+
+  validates :saler_id,presence: true
+  validates :name,presence: true, length: {maximum: 30}
+  validates :explain,presence: true, length: {maximum: 1000}
+  validates :category_id,presence: true
+  validates :state_id,presence: true
+  validates :fee_side_id,presence: true
+  validates :shipping_date_id,presence: true
+  validates :prefecture_id,presence: true
+  validates :price,presence: true, numericality: true,inclusion: { in: 300..9999999}
+  validates :photos,presence: true
 end

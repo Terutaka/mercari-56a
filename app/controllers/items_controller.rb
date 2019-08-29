@@ -6,7 +6,7 @@ before_action :set_category
 
   def new
     @item = Item.new
-    @item.photos.build
+    @item.photos.new
   end
 
   def create
@@ -14,7 +14,9 @@ before_action :set_category
     if @item.save
       render :index
     else
-      redirect_to action: 'new'
+      @item.photos.new
+      # redirect_to action: "new"
+      render :new
     end
   end
 

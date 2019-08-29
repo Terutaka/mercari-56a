@@ -13,17 +13,28 @@
           %p 最大10枚までアップロードできます
           = f.fields_for :photos do |photo|
             = photo.file_field :img_list,placeholder: "ドラッグアンドドロップ   またはクリックしてファイルをアップロード", id: "book_img",class: "__dropping"
-
+          - if @item.errors.present?
+            %ul.error_example
+              - @item.errors.full_messages_for(:photos).each do |message|
+                %li= message
 
         .__item-info
           ._name
             %h4 商品名
             %span 必須
             = f.text_field :name ,placeholder: "商品名（必須 40文字まで)",class: "_name__input"
+            - if @item.errors.present?
+              %ul.error_example
+                - @item.errors.full_messages_for(:name).each do |message|
+                  %li= message
           ._description
             %h4 商品の説明
             %span 必須
             = f.text_area :explain ,placeholder:"商品の説明（必須 1,000文字以内）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。",class: "_description__text"
+            - if @item.errors.present?
+              %ul.error_example
+                - @item.errors.full_messages_for(:explain).each do |message|
+                  %li= message
         .__about.clearfix
           %h3 商品の詳細
           ._box
@@ -33,14 +44,26 @@
               .__category-wrap
                 = f.collection_select :category_id, @parents,:id,:name,{prompt: "---"},class: "contents__item-about_box_condition_input",id: "parent-form"
                 = f.hidden_field :category_id, value: "",id: "cate_id"
+                - if @item.errors.present?
+                  %ul.error_example
+                    - @item.errors.full_messages_for(:category_id).each do |message|
+                      %li= message
             .__burand
               %h4 ブランド
               %span 任意
               = f.collection_select :brand_id, Brand.all,:id,:name,{prompt: "---"},class: "contents__item-about_box_condition_input"
+              - if @item.errors.present?
+                %ul.error_example
+                  - @item.errors.full_messages_for(:brand_id).each do |message|
+                    %li= message
             ._condition
               %h4 商品の状態
               %span 必須
               = f.collection_select :state_id, State.all,:id,:name,{prompt: "---"} ,class: "contents__item-about_box_condition_input"
+              - if @item.errors.present?
+                %ul.error_example
+                  - @item.errors.full_messages_for(:state_id).each do |message|
+                    %li= message
         .__shipping.clearfix
           %h3 配送について
           .__shipping_box
@@ -50,14 +73,26 @@
                 %span 必須
                 = f.collection_select :fee_side_id,@fee_side,:id,:name,{prompt: "---"}, class: "contents__shipping_box_charge_input",id: "fee_side_parent"
                 = f.hidden_field :fee_side_id, value: "",id: "fee_id"
+                - if @item.errors.present?
+                  %ul.error_example
+                    - @item.errors.full_messages_for(:fee_side_id).each do |message|
+                      %li= message
             .__shipping_box_ship-from-region
               %h4 発送元の地域
               %span 必須
               = f.collection_select :prefecture_id, Prefecture.all, :id, :name,prompt: "---",class: "contents__shipping_box_from-region-input"
+              - if @item.errors.present?
+                %ul.error_example
+                  - @item.errors.full_messages_for(:prefecture_id).each do |message|
+                    %li= message
             .__shipping_box_date
               %h4 発送までの日数
               %span 必須
               = f.collection_select :shipping_date_id,ShippingDate.all,:id, :name,prompt: "---", class:"contents__shipping_box_date_input"
+              - if @item.errors.present?
+                %ul.error_example
+                  - @item.errors.full_messages_for(:shipping_date_id).each do |message|
+                    %li= message
         .__price.clearfix
           %h3 販売価格(300〜9,999,999)
           .new_box
@@ -68,6 +103,10 @@
                   %span<> 必須
                 ._list_top__right
                   = f.text_field :price,placeholder:"例）300",id: "input_price"
+                  - if @item.errors.present?
+                    %ul.error_example
+                      - @item.errors.full_messages_for(:price).each do |message|
+                        %li= message
               %li._list
                 ._list_text 販売手数料（10%
                 #fee -

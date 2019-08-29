@@ -5,10 +5,6 @@ Rails.application.routes.draw do
 
   root 'items#index'
 
-
-  # resources :items, only: [:show]
-
-  # 今後変更予定
   resources :items do
     collection do
       get "buy"
@@ -25,16 +21,11 @@ Rails.application.routes.draw do
       get "mem_create3"
       get "mem_create4"
       get "mem_create5"
-      # get "show"
       get "logout"
       get "select",default: {format: 'json'}
-      # post "show"
-      # get "logout"
-      # post "new"
     end
   end
 
-  # resources :card, only: [:new, :show] do
   resources :card do
     collection do
       get "card_tmp1"

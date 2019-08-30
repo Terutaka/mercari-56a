@@ -287,7 +287,11 @@
       font-size: 16px;
       cursor: pointer;
       border-radius: 8px;
-		}
+    }
+    &__go-btn:hover{
+      background-color: #ea3;
+      transition-duration: 0.5s;
+    }
 		&__back-btn{
       display: block;
       width: 45%;

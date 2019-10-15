@@ -10,19 +10,22 @@ set :keep_releases, 5
 set :ssh_options, auth_methods: ['publickey'],
                   keys: ['~/.ssh/mercari_key.pem']
 
+set :linked_files, %w{config/master.key}
+
 after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
+
   task :restart do
     invoke 'unicorn:restart'
   end
 
-  desc 'upload secrets.yml'
+  desc 'upload master.key'
   task :upload do
     on roles(:app) do |host|
       if test "[ ! -d #{shared_path}/config ]"
         execute "mkdir -p #{shared_path}/config"
       end
-      upload!('config/', "#{shared_path}/config/secrets.yml")
+      upload!('config/master.key', "#{shared_path}/config/master.key")
     end
   end
   before :starting, 'deploy:upload'

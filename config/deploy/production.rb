@@ -4,7 +4,7 @@ server '18.176.12.2',
   ssh_options: {
     port: 22,
     user: "ec2-user",
-    keys: %w(~/.ssh/mercari-56a.pem),
+    keys: %w(~/.ssh/mercari_key.pem),
     forward_agent: true
   }
 

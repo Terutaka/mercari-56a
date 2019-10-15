@@ -17,16 +17,16 @@ namespace :deploy do
   end
 end
 
-set :default_env, {
-  rbenv_root: "/usr/local/rbenv",
-  path: "/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH",
-  AWS_ACCESS_KEY_ID: Rails.application.credentials.dig(:aws, :access_key_id),
-  AWS_SECRET_ACCESS_KEY: Rails.application.credentials.dig(:aws, :secret_access_key),
-  BASIC_AUTH_USER: ENV["BASIC_AUTH_USER"],
-  BASIC_AUTH_PASSWORD: ENV["BASIC_AUTH_PASSWORD"],
-  PAYJP_PRIVATE_KEY: ENV["PAYJP_PRIVATE_KEY"],
-  PAYJP_KEY: ENV["PAYJP_KEY"]
-}
+# set :default_env, {
+#   rbenv_root: "/usr/local/rbenv",
+#   path: "/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH",
+#   AWS_ACCESS_KEY_ID: Rails.application.credentials.dig(:aws, :access_key_id),
+#   AWS_SECRET_ACCESS_KEY: Rails.application.credentials.dig(:aws, :secret_access_key),
+#   BASIC_AUTH_USER: ENV["BASIC_AUTH_USER"],
+#   BASIC_AUTH_PASSWORD: ENV["BASIC_AUTH_PASSWORD"],
+#   PAYJP_PRIVATE_KEY: ENV["PAYJP_PRIVATE_KEY"],
+#   PAYJP_KEY: ENV["PAYJP_KEY"]
+# }
 set :linked_files, fetch(:linked_files, []).push("config/master.key")
 
 # namespace :deploy do

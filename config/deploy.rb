@@ -27,7 +27,7 @@ end
 #   PAYJP_PRIVATE_KEY: ENV["PAYJP_PRIVATE_KEY"],
 #   PAYJP_KEY: ENV["PAYJP_KEY"]
 # }
-set :linked_files, fetch(:linked_files, []).push("config/master.key")
+# set :linked_files, fetch(:linked_files, []).push("config/master.key")
 
 # namespace :deploy do
 #   desc "reload the database with seed data"
